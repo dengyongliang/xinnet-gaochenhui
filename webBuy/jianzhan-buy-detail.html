@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>购买选配</title>
+  <script type="text/javascript">
+    document.write("<link rel = 'stylesheet' type='text/css' href='./css/jzBuy.css?t="+new Date().valueOf()+"'>")
+  </script>
+  <script src="http://imgi.xinnet.com/www/newjavascript/jquery.js"></script>
+  <script type="text/javascript">
+    document.write("<script type='text/javascript' src='./js/jsonParams_jz.js?t="+new Date().valueOf()+"'><\/script>")
+  </script>
+  <script type="text/javascript">
+    document.write("<script type='text/javascript' src='./js/jzBuy.js?t="+new Date().valueOf()+"'><\/script>")
+  </script>
+</head>
+<body>
+  <div class = "jzBuy">
+    <!-- 自助 -->
+    <div class = "jzBuy_con clearFixed">
+      <div class = "jzBuy_l">
+        <div class = "jzBuyl_con">
+          <p class = "jzBuy_til" id="jztil1"></p>
+          <div class = "jzBuyl_d1">
+            <div class = "jzBuyl_item">
+              <p class = "jzBuyl_p0">套餐版本：</p>
+              <ul class = "jzBuyl_ul">
+                <li class = "jzOn" id = "proName"></li>
+              </ul>
+            </div>
+            <div class = "jzBuyl_item">
+               <p class = "jzBuyl_p0">语言版本：</p>
+              <ul class = "jzBuyl_ul jzWid1 multiSel" id = "languageList">
+                
+              </ul>
+            </div>
+            <div class = "jzBuyl_item">
+              <p class = "jzBuyl_p0">购买时长：</p>
+              <ul class = "jzBuyl_ul jzWid2" id = "buyYears">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class = "jzBuyl_con djtc">
+          <p class = "jzBuy_til" id="jztil2"></p>
+           <div class = "jzBuyl_d1">
+            <div class = "jzBuyl_item">
+              <p class = "jzBuyl_p0">套餐规格：</p>
+              <ul class = "jzBuyl_ul" id = "dzgg">
+              </ul>
+            </div>
+            <div class = "jzBuyl_item">
+              <p class = "jzBuyl_p0">购买次数：</p>
+              <ul class = "jzBuyl_ul jzWid2" id="ggNum">
+                <li class="jzOn"><span>1</span>次</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "jzBuy_r">
+        <div class = "jzBuyr_con">
+          <p class = "jzBuy_til">配置清单</p>
+          <div class = "jzBuyr_d1">
+            <ul class = "pzList clearFixed">
+              <li>
+                <div class="pzList_h pzList_h1"></div>
+                <div class="pzList_body">
+                  <p class="priceShow1">￥<span></span>元</p>
+                  <p><span>套餐版本：</span><span class="tcBb"></span></p>
+                  <p><span>语言版本：</span><span class="language"></span></p>
+                  <p><span>购买时长：</span><span class="yearSel"></span></p>
+                </div>
+              </li>
+              <li class="tcggLi">
+                <div class="pzList_h pzList_h2"></div>
+                <div class="pzList_body">
+                  <p class="priceShow2">￥<span></span>元</p>
+                  <p><span>套餐规格：</span><span class="tcggl"></span></p>
+                  <p><span>购买次数：</span><span class="buyNuml"></span></p>
+                </div>
+              </li>
+            </ul>
+            <div class = "jzPrice">共计：<p class = "jzPrice_p0">￥<span></span>元</p></div>
+            <div class = "jzBuyr_buy">
+              <a href="javascript:;" class = "jzBuyBtn">加入购物车</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "jzBuy_line"></div>
+    </div>
+    <!-- loading -->
+    <div class = "loadingBox" style = "display: none;">
+      <div class = "ld_con"><img src="./images/loadingIcon.gif">加载中</div>
+    </div>
+    <!-- end -->
+  </div>
+</body>
+</html>

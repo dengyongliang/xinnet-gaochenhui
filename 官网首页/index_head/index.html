@@ -1,0 +1,2564 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>云服务器_域名注册_虚拟主机-新网域名云服务器提供商(www.xinnet.com)</title>
+<meta name="Keywords" content="箭头云服务器,云服务器,域名注册,虚拟主机,域名交易,域名,主机托管租用,企业邮箱,xinnet,xinwang,新网" />
+<meta name="Description" content="新网是提供云服务器,箭头云服务器,域名注册,虚拟主机,域名交易,域名购买续费,主机托管租用,企业邮箱等互联网基础应用服务提供商,新网箭头云服务器专为中小微企业成长而设计的云服务器.新网是全球TOP11域名注册商，中国注册商唯一入选。" />
+
+<script type="text/javascript" src="http://imgi.xinnet.com/www/index/javascript/jquery.js"></script>
+
+<script type="text/javascript" src="http://imgi.xinnet.com/www/index/javascript/index2.js"></script>
+
+<script type="text/javascript" src="http://imgi.xinnet.com/www/newjavascript/common2.js"></script>
+<link href="http://imgi.xinnet.com/www/newcss/newpop.css" rel="stylesheet" type="text/css" />
+<link href="http://imgi.xinnet.com/www/index/css/index7.css" rel="stylesheet" type="text/css" />
+<link href="http://imgi.xinnet.com/www/index/css/banner_css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://imgi.xinnet.com/www/newjavascript/checkDomain.js"></script>
+<script type="text/javascript" src="http://imgi.xinnet.com/www/newjavascript/domain_transfer_util.js"></script>
+<script type="text/javascript" src="http://imgi.xinnet.com/www/newjavascript/home3.js"></script>
+
+<!-- 会员注册登录优化需求 完善邮箱功能 add by wurenwei 20151030 begin -->
+<link href="http://www.xinnet.com/views/privilegeRegister/javascript/Z-UI/skin/hyzx/hyzx.css" type="text/css" rel="stylesheet" />
+<link href="http://www.xinnet.com/views/loginnew/error.css" rel="stylesheet" type="text/css" />
+<link href="http://www.xinnet.com/views/loginnew/bind_email.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.xinnet.com/views/privilegeRegister/javascript/Z-UI/deploy/Z-UI.js"></script>
+<script type="text/javascript" src="http://www.xinnet.com/views/loginnew/js/bind_email.js"></script>
+
+
+
+<!-- 会员注册登录优化需求 完善邮箱功能 add by wurenwei 20151030 end1 -->
+
+
+<!-- 新增img轮播 -->
+  <script type="text/javascript">
+    var n = t = 0,count;
+    $(function(){
+      count = $(".ym_cn_animation img").length;
+
+	  $(".ym_cn_animation img:not(:first-child)").hide();
+	  t = setInterval("showImg()", 1500);
+	  $("li.yumingsousuo-b3").hover(function(){
+		clearInterval(t);
+	  }, function(){
+		t = setInterval("showImg()", 1500);
+	  });
+  
+	  /**登录判断**/
+	  $(".slide-banner-b .slide_com33").click(function(event){
+		  if("notLogin"!=loginId){
+			event.preventDefault();
+			window.location = "http://www.xinnet.com/domain/tld-com.html";  
+	    }        
+    })  
+  
+})
+  //显示图片
+  function showImg(){
+     n = n >= (count - 1) ? 0 : ++n;  //n的值 0 ，1 ，2
+     $(".ym_cn_animation img").filter(":visible").fadeOut(500).parent().children().eq(n).fadeIn(1000);
+   }
+ </script>
+
+</head>
+<body>
+ 
+
+
+
+
+<!--[if lt IE 8]>
+<div id="ie6-warning">您正在使用 Internet Explorer 7以下浏览器，在本页面的显示效果可能有差异。建议您升级到其他高端浏览器。
+</div>
+<script type="text/javascript">
+function position_fixed(el, eltop, elleft){
+if(!window.XMLHttpRequest)
+window.onscroll = function(){
+el.style.top = (document.documentElement.scrollTop + eltop)+"px";
+el.style.left = (document.documentElement.scrollLeft + elleft)+"px";
+}
+else el.style.position = "fixed";
+}
+position_fixed(document.getElementById("ie6-warning"),0, 0);
+</script>
+<![endif]-->
+
+
+
+<script type="text/javascript">
+    /*
+    * 智能机浏览器版本信息:
+    *
+    */
+    var browser={
+      versions:function(){
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return{//移动终端浏览器版本信息
+                   trident: u.indexOf('Trident') > -1,//IE内核
+                   presto: u.indexOf('Presto') > -1,//opera内核
+                   webKit: u.indexOf('AppleWebKit') > -1,//苹果、谷歌内核
+                   gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                   mobile: !!u.match(/AppleWebKit.*Mobile.*/),//是否为移动终端
+                  // mobile: !!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/),//是否为移动终端
+                   android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                   iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                   iPad: u.indexOf('iPad') > -1,//是否iPad
+                   webApp: u.indexOf('Safari') == -1//是否web应该程序，没有头部与底部
+            };
+          }(),
+          language:(navigator.browserLanguage || navigator.language).toLowerCase()
+    }
+
+          if(!browser.versions.mobile){
+          }else{
+              var url = window.location.href;
+
+              if(url!="http://www.xinnet.com/#m"){
+                window.location.href = "http://m.xinnet.com/" + window.location.search;
+              }
+          }
+  //  document.writeln("语言版本: "+browser.language);
+   // document.writeln(" 是否为移动终端: "+browser.versions.mobile);
+   // document.writeln(" ios终端: "+browser.versions.ios);
+   // document.writeln(" android终端: "+browser.versions.android);
+   // document.writeln(" 是否为iPhone: "+browser.versions.iPhone);
+   // document.writeln(" 是否iPad: "+browser.versions.iPad);
+   // document.writeln(navigator.userAgent);
+    </script>
+<!-- header begin-->
+<!-- header begin-->
+<!--script>window._YOUKE_CHAT_com_id='31c5eb1af6d8556dc15b9af4285d47af';window._YOUKE_CHAT_no_button='yes';document.write('<script src="http://api.youkeyun.com/js/youkechat.js"></script>');</script-->
+
+
+
+
+
+
+<link href="http://imgi.xinnet.com/www/index/css/index.css" rel="stylesheet" type="text/css" />
+<!--script type="text/javascript" src="http://imgi.xinnet.com/www/index/javascript/jquery.js"></script-->
+
+<script type="text/javascript">!window.jQuery && document.write("<script src='http://imgi.xinnet.com/www/newjavascript/jquery.js'>"+"</scr"+"ipt>");</script >
+
+<script type="text/javascript" src="http://imgi.xinnet.com/www/index/javascript/jquery.roller.js"></script>
+<script type="text/javascript" src="header3.js"></script>
+
+<script type="text/javascript" src="http://imgi.xinnet.com/www/index/javascript/mheader.js"></script>
+<script type="text/javascript" src="http://imgi.xinnet.com/www/newjavascript/xinnet_xa.js"></script>
+<script type="text/javascript" src="http://imgi.xinnet.com/www/newjavascript/trakerEmar.js"></script>
+
+
+<script type="text/javascript">
+  $(function(){
+         $(".header3 .header3-login").fadeIn(500);
+    })
+</script>
+
+
+
+
+<!-- 百度统计结束 -->
+
+<!--基本监测代码开始-->
+<script type="text/javascript">
+(function() {
+var s = document.createElement('script');
+s.type = 'text/javascript';
+s.async = true;
+s.src = ('https:'==document.location.protocol ? 'https' : 'http') + '://tracker.xinmt.com/track?p=1&c=1116';
+var h = document.getElementsByTagName('head')[0];
+if(h) h.appendChild(s);
+})();
+</script>
+
+<!--基本监测代码结束-->
+
+
+
+<!--此代码的作用是用于统计和分析所有渠道带来的访问网站的访客人群标签，以及后期对于这些网站访客进行广告的跟踪投放，配合竞价，实现访客的再营销，提升转化效果。-->
+<script type="text/javascript">
+var _py = _py || [];
+_py.push(['a', 'cjs..FDHOI0GxKUVO0WMnnAjLU0']);
+_py.push(['domain','stats.ipinyou.com']);
+_py.push(['e','']);
+-function(d) {
+	var s = d.createElement('script'),
+	e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
+	f = 'https:' == location.protocol;
+	s.src = (f ? 'https' : 'http') + '://'+(f?'fm.ipinyou.com':'fm.p0y.cn')+'/j/adv.js';
+}(document);
+</script>
+<!-- 解决banner显示问题 -->
+<script type="text/javascript">
+  $(function(){
+    $(".slide-banner-b>div").fadeIn(1000);
+    $(window).scroll(function(){
+    var scrolltop = $(document).scrollTop();
+    if(scrolltop > 400){
+      $("#x-tool-top").fadeIn();
+    }
+    else{
+      $("#x-tool-top").fadeOut();
+    }
+  });
+  })
+</script>
+<!-- 浮窗 begin -->
+<div class="x-tool" style = "height:392px;">
+ <!-- <div><a class = "xsl_new_a" href="http://www.xinnet.com/composite/zt/xinrenyouli.html" target = "_blank"><img src="http://imgi.xinnet.com/www/index/images/xsl_icon.png"></a></div> -->
+  <div class = "x-01 x-newhd"><a href="javascript:;" class = "x-newhd-a"><span>最新<br/>活动</span></a></div>
+  <div class="x-01"> 
+    <a href="http://m.youkeyun.com/?comId=8e2a19a2376eda54694331df605ce2fb" target="_blank"> <img src="http://imgi.xinnet.com/www/index/images/topBar01.png"> <span>咨询</span> </a> </div>
+  <div class="x-01"> <a href="http://www.xinnet.com/online/shopcart.do?method=toShopCartList"> <img src="http://imgi.xinnet.com/www/index/images/topBar02.png"> <span>购物车</span> <em class="num"></em> </a> </div>
+  <div class="x-01"> <a href="http://www.xinnet.com/service/service.html"> <img src="http://imgi.xinnet.com/www/index/images/topBar03.png"> <span>帮助</span> </a> </div>
+<div class="x-01"> <a href="http://www.xinnet.com/xinnews/gonggao/28835.html"> <img src="http://imgi.xinnet.com/www/index/images/topBar10.png"> <span style = "font-size: 12px;">重要通知</span> </a> </div>
+  <!-- <div class="x-01"> <a href="http://121.14.4.151:81/icp/common/login.jsp"> <img src="http://imgi.xinnet.com/www/index/images/x-04.png" width="22px;" height="22px;"> <span>备案</span> </a> </div> -->
+  <div class="x-01" id = "x-tool-top" style = "display: none;"> <a href="javascript:;" class="x-top"> <img src="http://imgi.xinnet.com/www/index/images/x-05.png" width="30px;" height="30px;"> </a> </div>
+  <div class = "x_newHdBar" style = "display: none;top: -15px;left: -305px;height:380px;width:312px;">
+    <ul style = "padding: 37px 41px;">
+      <li>
+        <div><img src="http://imgi.xinnet.com/www/index/images/topBar04.png"></div>
+        <div>
+          <p>新会员注册</p>
+          <p><a href="http://www.xinnet.com/composite/zt/xinrenyouli.html" target="_blank">送660元礼包</a></p>
+        </div>
+      </li>
+      <li>
+        <div><img src="http://imgi.xinnet.com/www/index/images/topBar05.jpg"></div>
+        <div>
+          <p>箭头云服务器</p>
+          <p><a href="http://www.xinnet.com/cs/jg.html" target="_blank">1年9折,2年8折, 3年及以上7折</a></p>
+        </div>
+      </li>
+      <li>
+        <div><img src="http://imgi.xinnet.com/www/index/images/topBar06.jpg"></div>
+        <div>
+          <p class = "x-tool-virHost">新网云虚机<span>HOT</span></p>
+          <p><a href="http://www.xinnet.com/composite/zhongqiu.html" target="_blank">购买多年赠大闸蟹礼券</a></p>
+        </div>
+      </li>
+      <li>
+        <div><img src="http://imgi.xinnet.com/www/index/images/topBar07.jpg"></div>
+        <div>
+          <p>企业邮箱</p>
+          <p><a href="http://www.xinnet.com/mail/mail.html?mType=gn" target="_blank">买3年送1年, 买5年送2年</a></p>
+        </div>
+      </li>
+      <li>
+        <div><img src="http://imgi.xinnet.com/www/index/images/topBar08.png"></div>
+        <div>
+          <p>邮件营销</p>
+          <p><a href="http://www.xinnet.com/mail/zt/yuntuisong.html" target="_blank">8.8元/3888封</a></p>
+        </div>
+      </li>
+      <li>
+        <div><img src="http://imgi.xinnet.com/www/index/images/topBar11.png"></div>
+        <div>
+          <p>协同办公</p>
+          <p><a href="http://www.xinnet.com/mail/xietong.html" target="_blank">协同办公新体验，限时5折优惠</a></p>
+        </div>
+      </li>
+    </ul>
+    <div class = "x_newHdBar_close" style = "top: 18px;right: 32px;">×</div>
+  </div>
+</div>
+<!-- 浮窗 end -->
+
+
+
+
+<div class="fl-bg" style="display:none;">
+  <div class="fl-center">
+    <p class="fl-text">
+      <i class="fi-ico"></i>
+      购买云虚拟主机299元系列1年以上,优惠6.0折（在购物车里查看优惠哟!）   </p>
+      <P style="display:none;" class="fi-pop"><span class="tit1">活动说明：</span>·本活动与送京东卡活动不叠加；</br>·本活动与分享优惠不叠加；</br>·本活动与其他活动叠加时，以购物车价格为准。 </P>
+	  <em style="display:none;"></em>
+	<a href="javascript:;" class="fl-tips">详细说明</a>   <a href="javascript:;" class="fl-close">×</a>  </div>
+</div>
+
+<script type="text/javascript">
+//alert(window.location.search);
+ var url = window.location.search;
+//    alert(url.length);
+//    alert(url.lastIndexOf('='));
+var exptimefl = 168;
+
+
+
+if(url!='' && url.indexOf("rebatecode")>0){
+    var loc = url.substring(url.indexOf('=')+1, url.length);
+  //  alert(loc);
+
+ // loc = "RaG1kZXRxb2UtZ3ozNDgxLzo=";
+
+    $.ajax({
+			//url:"http://119.10.116.232:8080/myRebate/myRebate.do",
+             url:"http://www.xinnet.com/myRebate/myRebate.do",
+			 type:'get',
+             async : true,
+			//contentType : "application/json; charset=utf-8",
+			dataType : "jsonp",
+			jsonp:"callback",
+
+			 data:{"method":"checkRebateUrl","url":loc},
+			 beforeSend:function(){
+
+			 },
+			 success:function(data, textStatus, jqXHR){
+				 var result = data.status;
+                 var context = data.context;
+               // alert(result);
+                if(result==1){
+                  var ctxt = '<i class="fi-ico"></i>'+  context;               
+                  $(".fl-text").html(ctxt);
+                 $(".fl-bg").show();
+                 setFlid(loc);
+                // var tmpc1 = encodeURI(context);
+              //  addCookie('flcon',tmpc1,exptimefl);
+                 addCookieData('flcon',context,exptimefl);
+                }else{
+                    var ctxt = '<i class="fi-ico"></i>'+  context;               
+                  $(".fl-text").html(ctxt);
+                  $(".fl-bg").show();
+                // setFlid(loc);
+                }
+               
+                
+		      }
+		});
+}else {
+    var flc = getCookieData('flcon');
+    if(flc!='') {
+       flc= decodeURIComponent(flc);
+   var ctxt = '<i class="fi-ico"></i>'+  flc ;               
+                  $(".fl-text").html(ctxt);
+                 $(".fl-bg").show();
+    
+}
+}
+
+function  setFlid(fid) {
+        $.ajax({
+			// url:"http://119.10.116.232:8080/online/shopcart.do?method=setRebateIdToCookie",
+             url:"http://www.xinnet.com/online/shopcart.do?method=setRebateIdToCookie",
+			 type:'post',
+             async : true,
+			//contentType : "application/json; charset=utf-8",
+			dataType : "jsonp",
+			jsonp:"setRebateIdCallback",
+            
+			 data:{"rebateId":fid},
+             xhrFields:{withCredentials:true},
+             crossDomain:true,
+			 beforeSend:function(){
+
+			 },
+			 success:function(data, textStatus, jqXHR){
+			//	var result = data[0];
+
+
+
+		      }
+		});
+}
+
+
+</script>
+<!-- 浮窗 end -->
+<!-- header begin-->
+<div class="header3">
+  <div class="header3-content">
+    <div class="header3-logo"> <a href="http://www.xinnet.com"></a> </div>
+    <div class="header3-nav">
+      <ul>
+        <li class="hots"><a href="javascript:;">云产品</a><!-- <img src="http://imgi.xinnet.com/www/index/images/HOT.png"> --></li>
+        <li class="hots"><a href="javascript:;">解决方案</a><div style = "position: absolute;width: 34px;height: 17px;font-size: 12px;text-align: center;line-height: 17px;color: #fff;background-color: #ed3333;top: 5px;left: 72px;border-radius: 2px;">NEW</div><div style = "border-left: 3px solid transparent;border-right: 3px solid transparent;border-top: 6px solid #ed3333;position: absolute;top: 22px;left: 85px;"></div></li>
+        <li><a href="http://www.xinnet.com/domain/domain.html">域名注册</a></li>
+        <li><a href="http://www.xinnet.com/domain/domain_yikoujia_search.jsp">域名交易</a></li>
+        <li><a href="http://www.xinnet.com/mail/mail.html">企业邮箱</a></li>
+        <li><a href="javascript:;">服务与应用</a></li>
+        <li><a href="http://www.xinnet.com/service/service.html">帮助中心</a></li>
+      </ul>
+    </div>
+    <div class="header3-login" style = "display:none;">
+      <!--登录之前-->
+      <div class="zhuce">
+            	<a href="http://www.xinnet.com/user/user.do?method=toRegister" class="register">注册有礼</a><a href="http://login.xinnet.com/login?service=http%3A%2F%2Fwww.xinnet.com%2Fviews%2Flogin%2Flogin.jsp" class="login_newpage">登录</a><a href="http://www.xinnet.com/xinnews/gonggao/" class="email"><img src="http://imgi.xinnet.com/www/index/images/email.png" width="24px;" height="19px;"><span class="num">1</span></a><a href="http://beian.xinnet.com" class="login_newpage">备案</a>
+            </div>
+      <!--登录之后-->
+      <div class="userinfo"> <a href="http://www.xinnet.com/views/uc/html/account/myAccount.html" class="username">gaoyuan@xinnet.com</a><a href="http://www.xinnet.com/online/shopcart.do?method=toShopCartList" class="goods"><img src="http://imgi.xinnet.com/www/index/images/goods.png" width="24px;" height="20px;"><span class="num">3</span></a>
+
+	  <a href="http://www.xinnet.com/xinnews/gonggao/" class="email">
+	  <img src="http://imgi.xinnet.com/www/index/images/email.png" width="24px;" height="19px;">
+	  	  <span  class="num">3</span>
+	  
+	  </a>
+	  <a href="http://beian.xinnet.com" class="login_newpage">备案</a>
+        <div class="userCenter" style="display:none;">
+          <div class="_header2-info1-ydl">
+            <div class="header2-info1-ydl">
+              <div class="header2-info1-ydl-h">hy5036275</div>
+              <div class="header2-info1-ydl-c">
+                <div class="header2-info1-ydl-c1">
+                  <div class="header2-info1-ydl-c11"><a href="http://www.xinnet.com/views/uc/html/myprd/domain/domain_default.html">域名管理</a></div>
+                  <div class="header2-info1-ydl-c12"><a href="http://www.xinnet.com/views/uc/html/financial/account_recharge.html">我要充值</a></div>
+                </div>
+                <div class="header2-info1-ydl-c2">
+                  <div class="header2-info1-ydl-c21"> <a href="http://www.xinnet.com/views/uc/html/ordermanage/order_weifukuan.html">未付款订单</a><span></span> </div>
+                  <div class="header2-info1-ydl-c22">
+                  <a href="http://www.xinnet.com/views/uc/html/financial/rebate_overview.html">我的返利</a><img src="http://imgi.xinnet.com/www/newimages/hot.gif" alt="" width="21" height="16"> </div>
+                </div>
+              </div>
+              <div class="header2-info1-ydl-cnull" style="display:none;"></div>
+              <div class="header2-info1-ydl-f">
+                <div class="header2-info1-ydl-f1"><a href="http://www.xinnet.com/user/user.do?method=doLogout">安全退出</a></div>
+                <div class="header2-info1-ydl-f2"> <a href="/views/uc/html/account/myAccount.html">进入我的账户</a> </div>
+              </div>
+              <em class="header2-info1-ydl-jt"></em> </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="header3-navcontent" style="display:none;">
+    <div class="header3-navcontent-b">
+      <div class="header3-navcontent-b1 tab1">
+        <ul class="yuncp-list">
+          <li class="on"><a href="http://www.xinnet.com/cs/cs.html">箭头云服务器</a><span>&gt;</span></li>
+          <li><a href="http://www.xinnet.com/chicloud/chiclound.html">驰云服务器</a><span>&gt;</span></li>
+          <li><a href="http://www.xinnet.com/virtualhost/virtualhost.html">云虚拟主机</a><span>&gt;</span></li>
+          <li><a href="http://www.xinnet.com/idc/idc.html">服务器租用/托管</a><span>&gt;</span></li>
+        </ul>
+      </div>
+      <div class="content1">
+        <div class=" content">
+          <div class="header3-navcontent-b2">
+            <h2>箭头云规格</h2>
+            <ul class="jtyun-list">
+              <li> <a href="http://www.xinnet.com/cs/jg.html">
+                <h2>通用型</h2>
+                <p>优质均衡、优质配置，SSD<span>55元</span>/月起，  SAS<span>38元</span>/月起 </p>
+                </a> </li>
+                 <li> <a href="http://www.xinnet.com/cs/jg.html">
+                <h2>计算型</h2>
+                <p>适用计算密集型应用，最高支持<span>32</span>核</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/cs/jg.html">
+                <h2>内存型</h2>
+                <p>适用于耗内存应用，最高支持<span>128G</span>内存</p>
+                </a> </li>
+
+              <!--li> <a href="http://www.xinnet.com/cs/jg.html">
+                <h2>CPU型</h2>
+                <p>适用计算密集型应用，最高支持<span>32</span>核</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/cs/jg.html">
+                <h2>内存型</h2>
+                <p>适用于耗内存应用，最高支持<span>96G</span>内存</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/cs/jg.html">
+                <h2>磁盘型</h2>
+                <p>适用于大存储型应用，最高支持<span>2T</span>磁盘</p>
+                </a> </li-->
+
+              <!--li> <a href="http://www.xinnet.com/cs/jg.html">
+                <h2>计算型</h2>
+                <p>适用计算密集型应用，最高支持<span>32</span>核</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/cs/jg.html">
+                <h2>内存型</h2>
+                <p>适用于耗内存应用，最高支持<span>128G</span>内存</p>
+                </a> </li-->
+              
+            </ul>
+            <p class="note">功能丰富，使用简单，支持自动与手动备份，备份低至1元</p>
+          </div>
+          <!--div class="header3-navcontent-b2">
+            <h2>磁盘类型</h2>
+            <ul class="jtyun-list">
+              <li> <a href="http://www.xinnet.com/cs/jg.html">
+                <h2>SSD高性能磁盘</h2>
+                <p>高性能本地<span>SSD</span>磁盘，提供高达数万I/O读写能力</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/cs/jg.html">
+                <h2>SAS标准型磁盘</h2>
+                <p>提供最优性能和更大容量，最大支持<span>2G</span></p>
+                </a> </li>
+            </ul>
+          </div-->
+
+		  <div class="header3-navcontent-b2">
+            <h2>云安全</h2>
+            <ul class="jtyun-list">
+              <li>
+                <h2>云高防</h2>
+                <p>有效解决CC、DDoS攻击，超强防御，保护网站安全</p>
+                 </li>
+              <li>
+                <h2>Web应用防火墙（即将上线）</h2>
+                <p>针对web网站的常见攻击进行监测和阻断</p>
+
+			  </li>
+			  <li>
+                <h2>等保测评（即将上线）</h2>
+                <p>帮助云上企业快速通过公安部要求的等级评测</p>
+
+			  </li>
+			    <li>
+                <h2>堡垒机（即将上线）</h2>
+                <p>账号管理、认证管理、权限管理、审计管理、自动化运维</p>
+
+			  </li>
+
+			    <!--li>
+                <h2>主机安全（即将上线）</h2>
+                <p>提供漏洞管理、配置核查和入侵告警等功能</p>
+
+			  </li-->
+				<li> <a href="http://www.xinnet.com/views/fw/aqw.jsp" onclick="traker.traceCount('xinnet.com', '110', 'fw23');" >
+                <h2>云主机安全卫士<em class="word-red">NEW</em></h2>
+                <p>网站安全防护系统，全面解决网站各种安全问题</p>
+                </a> </li>
+            </ul>
+          </div>
+
+          <div class="header3-navcontent-b2 header3-navcontent-b-last">
+            <h2>云服务</h2>
+            <ul class="jtyun-list">
+              <li> <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=1" onclick="traker.traceCount('xinnet.com', '110', 'fw13');">
+                <h2>负载均衡<em class="word-red">NEW</em></h2>
+                <p>加强数据处理能力、提高网络的灵活性和可用性</p>
+                </a> </li>
+              <!--li>
+                <h2>云高防</h2>
+                <p style = "color:#c6c6c6;">有效解决CC 、DDOS攻击,超强防御,保护网站安全</p>
+                </li-->
+              <li> <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=3" onclick="traker.traceCount('xinnet.com', '110', 'fw14');">
+                <h2>数据迁移<em class="word-red">NEW</em></h2>
+                <p>网站程序、数据库迁移,让您的网站轻松可以访问</p>
+                </a> </li>
+
+    <li> <a href="http://www.xinnet.com/views/fw/dyw.jsp" onclick="traker.traceCount('xinnet.com', '110', 'fw22');">
+                <h2>云主机代运维<em class="word-red">NEW</em></h2>
+                <p>全托式服务，服务器的所有问题提供技术支持</p>
+                </a> </li>
+   <li> <a href="http://www.xinnet.com/views/fw/aqw.jsp" onclick="traker.traceCount('xinnet.com', '110', 'fw23');" >
+                <h2>云主机安全卫士<em class="word-red">NEW</em></h2>
+                <p>网站安全防护系统，全面解决网站各种安全问题</p>
+                </a> </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="content" style="display:none;">
+          <div class="header3-navcontent-b2">
+            <h2>驰云服务器</h2>
+            <ul class="jtyun-list">
+              <li> <a href="http://www.xinnet.com/chicloud/pur.html">
+                <h2>驰云&middot;风</h2>
+                <p>个人建站：<span>SAS</span>硬盘（数据读写速度是SATA硬盘的<span>2</span>倍）</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/chicloud/pur.html?ytype=huo">
+                <h2>驰云&middot;火</h2>
+                <p>企业官网：独享<span>4M</span>带宽，满足一般企业网站访问所需</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/chicloud/pur.html?ytype=lei">
+                <h2>驰云&middot;雷</h2>
+                <p>行业门户：双核CPU，<span>40G</span>大容量空间，可供存储海量数据</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/chicloud/pur.html?ytype=dian">
+                <h2>驰云&middot;电</h2>
+                <p>电子商务：独享<span>4G</span>内存，令每笔交易顺畅完成</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/chicloud/pur.html?ytype=guang">
+                <h2>驰云&middot;光</h2>
+                <p>网络社区：四核CPU，独享<span>6M</span>带宽，不限流量，支持社会化信息传播</p>
+                </a> </li>
+            </ul>
+          </div>
+          <div class="header3-navcontent-b2 header3-navcontent-b-last">
+            <h2>云服务</h2>
+            <ul class="jtyun-list">
+              <!--li>
+                <h2>云高防</h2>
+                <p style = "color:#c6c6c6">有效解决CC、DDOS攻击,超强防御,保护网站安全</p>
+              </li-->
+              <li> <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=3" onclick="traker.traceCount('xinnet.com', '110', 'fw12');">
+                <h2>数据迁移<em class="word-red">NEW</em></h2>
+                <p>网站程序、数据库迁移,让您的网站轻松可以访问</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=4" onclick="traker.traceCount('xinnet.com', '110', 'fw11');">
+                <h2>数据险<em class="word-red">NEW</em></h2>
+                <p>到期主机给予全方位的网站代码找回服务</p>
+                </a> </li>
+
+                 <li> <a href="http://www.xinnet.com/views/fw/dyw.jsp" onclick="traker.traceCount('xinnet.com', '110', 'fw22');">
+                <h2>云主机代运维<em class="word-red">NEW</em></h2>
+                <p>全托式服务，服务器的所有问题提供技术支持</p>
+                </a> </li>
+   <li> <a href="http://www.xinnet.com/views/fw/aqw.jsp" onclick="traker.traceCount('xinnet.com', '110', 'fw23');" >
+                <h2>云主机安全卫士<em class="word-red">NEW</em></h2>
+                <p>网站安全防护系统，全面解决网站各种安全问题</p>
+                </a> </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="content" style="display:none;">
+          <div class="header3-navcontent-b2">
+            <h2>云虚拟主机</h2>
+            <ul class="jtyun-list">
+              <li> <a href="http://www.xinnet.com/virtualhost/virtualhost.html">
+                <h2>国内云虚拟主机</h2>
+                <p>经济型、全能型、PHP专业型，适用于展示型网站</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/virtualhost/vhost1.html">
+                <h2>海外云虚拟主机</h2>
+                <p>适用于外贸及免备案网站，高防护、更安全</p>
+                </a> </li>
+            </ul>
+          </div>
+          <div class="header3-navcontent-b2 header3-navcontent-b-last">
+            <h2>云服务</h2>
+            <ul class="jtyun-list">
+              <li> <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=3" onclick="traker.traceCount('xinnet.com', '110', 'fw16');">
+                <h2>数据迁移<em class="word-red">NEW</em></h2>
+                <p>网站程序、数据库迁移，让您的网站轻松可以访问</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=4" onclick="traker.traceCount('xinnet.com', '110', 'fw15');">
+                <h2>数据险<em class="word-red">NEW</em></h2>
+                <p>到期主机给予全方位的网站代码找回服务</p>
+                </a> </li>
+              <li>
+                <h2>7天无条件退款</h2>
+                <p>无忧保障，诚心服务，畅享便捷的主机产品</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content" style="display:none;">
+          <div class="header3-navcontent-b2">
+            <h2>租用与托管</h2>
+            <ul class="jtyun-list">
+              <li> <a href="http://www.xinnet.com/idc/idc.html">
+                <h2>服务器租用</h2>
+                <p>高配置，低价格，送服务器产权</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/idc/idc.html?page=2">
+                <h2>服务器托管</h2>
+                <p>五星级机房，骨干网核心链路，金融行业指定灾备中心</p>
+                </a> </li>
+            </ul>
+          </div>
+          <!--div class="header3-navcontent-b2 header3-navcontent-b-last">
+            <h2>云服务</h2>
+            <ul class="jtyun-list">
+              <li>
+                <h2>云高防</h2>
+                <p style = "color:#c6c6c6">有效解决CC、DDOS攻击,超强防御,保护网站安全</p>
+              </li>
+            </ul>
+          </div -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 解决方案 -->
+  <div class="header3-navcontent" style="display:none;">
+     <div class="header3-navcontent-b">
+      <div class="header3-navcontent-b1 tab_jjfa">
+         <ul class="yuncp-list">
+          <li class="on"><a href="http://www.xinnet.com/cs/wzyfa.htm">网站解决方案</a><span>&gt;</span></li>
+          <li><a href=" http://www.xinnet.com/cs/jsfa.html">应用系统解决方案</a><span>&gt;</span></li>
+        </ul>
+      </div>
+      <div class = "content_jjfa">
+      <!-- 1content -->
+          <div class = "content">
+            <div class="header3-navcontent-b2 header3-navcontent-b-last1">
+              <ul class="jtyun-list w320">
+                <li> <a href="http://www.xinnet.com/cs/wxfa.html">
+                  <h2>微型网站</h2>
+                  </a> </li>
+                  <li> <a href="http://www.xinnet.com/cs/xxwzfa.html">
+                  <h2>小型网站</h2>
+                  </a> </li>
+                  <li> <a href="http://www.xinnet.com/cs/zxwzfa.html">
+                  <h2>中型网站</h2>
+                  </a> </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 2content -->
+          <div class = "content" style = "display:none;"></div>
+      </div>
+    </div> 
+  </div>
+  <!-- end -->
+  <div class="header3-navcontent" style="display:none;">
+    <div class="header3-navcontent-b">
+      <div class="header3-navcontent-b1 tab2">
+        <ul class="yuncp-list">
+          <li class="on"><a href="http://www.xinnet.com/domain/domain.html">域名注册</a><span>&gt;</span></li>
+          <li><a href="http://www.xinnet.com/domain/domainIn.html">域名转入及续费</a><span>&gt;</span></li>
+          <li><a>增值化服务</a><span>&gt;</span></li>
+        </ul>
+      </div>
+      <div class="content2">
+        <div class="content">
+          <div class="header3-navcontent-b2">
+            <h2>域名注册<a href="http://www.xinnet.com/domain/domain.html" class="more">查看更多></a></h2>
+            <ul class="yuming-list">
+              <li style = "margin-left: 0;margin-top: 0;"><a href="http://www.xinnet.com/domain/tld-com.html">.com</a></li>
+              <li style = "margin-top: 0;"><a href="http://www.xinnet.com/domain/tld-net.html">.net</a></li>
+              <li style = "margin-top: 0;"><a href="http://www.xinnet.com/domain/tld-cn.html">.cn</a></li>
+              <li style = "margin-left: 0;"><a href="http://www.xinnet.com/domain/top.html">.top</a></li>
+              <li><a href="http://www.xinnet.com/domain/vip.html">.vip</a></li>
+              <li><a href="http://www.xinnet.com/domain/newgtld.html">.xyz</a></li>
+              <li style = "margin-left: 0;"><a href="http://www.xinnet.com/domain/jt.html">.集团</a></li>
+              <li><a href="http://www.xinnet.com/domain/newgtld.html">.网店</a></li>
+              <li><a href="http://www.xinnet.com/domain/shop.html">.shop</a></li>
+              <p><a href="http://www.xinnet.com/domain/domain.html" class="favourable">近期促销></a></p>
+              <!-- <li> <a href="http://www.xinnet.com/domain/tld-com.html" class="yuming on">.com</a> <a href="http://www.xinnet.com/domain/tld-net.html" class="yuming">.net</a> <a href="http://www.xinnet.com/domain/tld-cn.html" class="yuming">.cn</a> <a href="http://www.xinnet.com/domain/tld-cc.html" class="yuming">.cc</a> <a href="http://www.xinnet.com/domain/tld-me.html" class="yuming">.me</a> <a href="http://www.xinnet.com/domain/newgtld.html" class="yuming">.xyz</a> <a href="http://www.xinnet.com/domain/newgtld.html" class="yuming">.集团</a> <a href="http://www.xinnet.com/domain/newgtld.html" class="yuming">.网店</a> <a href="http://www.xinnet.com/domain/newgtld.html" class="yuming">.shop</a> <a href="http://www.xinnet.com/domain/domain.html" class="favourable">近期促销></a> </li> -->
+            </ul>
+            <h2 class="mt10">域名整体解决方案</h2>
+            <ul class="fangan-list">
+              <li> <a href="http://www.xinnet.com/domain/zt/yuming.html" class="fangan">品牌企业域名解决方案</a> </li>
+            </ul>
+          </div>
+          <div class="header3-navcontent-b2 header3-navcontent-b-last">
+            <h2>域名注册服务</h2>
+            <ul class="fangan-list">
+              <li> <a href="http://www.xinnet.com/domain/domain_batch_check_new.jsp" class="fangan">域名批量查询注册<em class="hot-orange">HOT</em></a><a href="http://www.xinnet.com/Modules/agent/domain/domain_cert.jsp" class="fangan">域名证书打印</a> <a href="http://www.xinnet.com/views/uc/html/myprd/domain/domain_default.html" class="fangan">我的域名列表</a> <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=2" class="fangan" onclick="traker.traceCount('xinnet.com', '110', 'fw10');" style = "margin-left:-7px;">人工域名解析<em class="word-red">NEW</em></a> <a href="http://www.xinnet.com/domain/domainAuditInOut.do?method=hypush" class="fangan">带价PUSH</a><a href="http://www.xinnet.com/real/manage.do?method=queryRealManager" class="fangan">域名实名制管理</a> </li>
+            </ul>
+            <h2 class="mt10">域名服务引导<a href="http://www.xinnet.com/service/cjwt/domain/" class="more">查看更多></a></h2>
+            <ul class="fangan-list">
+              <li> <a href="http://www.xinnet.com/service/cjwt/domain/jieshao/1163.html" class="fangan">如何购买域名</a><a href="http://www.xinnet.com/service/cjwt/domain/guanli/1264.html" class="fangan">如何做域名实名制</a> <a href="http://www.xinnet.com/service/cjwt/domain/guanli/1164.html" class="fangan">如何快捷设置域名解析</a><a href="http://www.xinnet.com/service/cjwt/domain/guohu/1184.html" class="fangan">如何将域名过户</a> <a href="http://www.xinnet.com/service/xssl/domain/1175.html" class="fangan">域名模板实用集锦</a><a href="http://www.xinnet.com/service/cjwt/domain/gaojifuwu/1172.html" class="fangan">域名停泊怎样使用</a>
+              <a href="http://www.xinnet.com/service/cjwt/domain/zhucexufei/1161.html" class="fangan">域名续费指引</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content" style="display:none;">
+          <div class="header3-navcontent-b2">
+            <h2>域名转入及续费<a href="http://www.xinnet.com/domain/domainIn.html#dpCon3" class="more">转入续费价格表及优惠活动></a></h2>
+            <ul class="jtyun-list w430">
+              <li>
+                <h2>.com转入价格￥60</h2>
+                <p style = "color:#c6c6c6">全球最流行域名.com域名，转入新网仅需<span>60</span>元</p>
+              </li>
+              <li>
+                <h2>.cn转入价格￥38</h2>
+                <p style = "color:#c6c6c6">中国企业互联网标识.cn域名，转入新网仅需<span>38</span>元</p>
+              </li>
+              <li>
+                <h2>.cc转入价格￥59</h2>
+                <p style = "color:#c6c6c6">简单易记的国际顶级域名.cc，转入新网仅需<span>59</span>元</p>
+              </li>
+              <li>
+                <h2>.top转入价格￥28</h2>
+                <p style = "color:#c6c6c6">域名新时代的标杆.top域名，转入新网仅需<span>28</span>元</p>
+              </li>
+            </ul>
+          </div>
+          <div class="header3-navcontent-b2 header3-navcontent-b-last">
+            <h2>域名注册服务</h2>
+            <ul class="fangan-list">
+              <li> <a href="http://www.xinnet.com/domain/domain_batch_check_new.jsp" class="fangan">域名批量查询注册<em class="hot-orange">HOT</em></a><a href="http://www.xinnet.com/Modules/agent/domain/domain_cert.jsp" class="fangan">域名证书打印</a> <a href="http://www.xinnet.com/views/uc/html/myprd/domain/domain_default.html" class="fangan">我的域名列表</a> <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=2" class="fangan"style = "margin-left:-7px;">人工域名解析<em class="word-red">NEW</em></a> <a href="http://www.xinnet.com/domain/domainAuditInOut.do?method=hypush" class="fangan">带价PUSH</a><a href="http://www.xinnet.com/real/manage.do?method=queryRealManager" class="fangan">域名实名制管理</a> </li>
+            </ul>
+            <h2 class="mt10">域名服务引导<a href="http://www.xinnet.com/service/cjwt/domain/" class="more">查看更多></a></h2>
+            <ul class="fangan-list">
+              <li> <a href="http://www.xinnet.com/service/cjwt/domain/jieshao/1163.html" class="fangan">如何购买域名</a><a href="http://www.xinnet.com/service/cjwt/domain/guanli/1264.html" class="fangan">如何做域名实名制</a> <a href="http://www.xinnet.com/service/cjwt/domain/guanli/1164.html" class="fangan">如何快捷设置域名解析</a><a href="http://www.xinnet.com/service/cjwt/domain/guohu/1184.html" class="fangan">如何将域名过户</a> <a href="http://www.xinnet.com/service/xssl/domain/1175.html" class="fangan">域名模板实用集锦</a><a href="http://www.xinnet.com/service/cjwt/domain/gaojifuwu/1172.html" class="fangan">域名停泊怎样使用</a>
+              <a href="http://www.xinnet.com/service/cjwt/domain/zhucexufei/1161.html" class="fangan">域名续费指引</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content" style="display:none;">
+          <div class="header3-navcontent-b2">
+            <h2>增值化服务</h2>
+            <ul class="zengzhi-list">
+              <li>
+                <!--<a href="javascript:;"><span>名管家</span>-企业域名管理神奇</a>-->
+                <a href="http://www.xinnet.com/domain/domainWhoisHide.html"><span>WhoIs隐私保护</span>-域名注册信息隐私安全的守护神</a> <a href="http://www.xinnet.com/domain/domainBusinessCard.html"><span>商务名片</span>-域名whois查询推广新套路</a> <a href="http://www.xinnet.com/domain/domainRegistarLock.html"><span>注册局锁定</span>-顶级域名安全防护装备</a> <a href="http://www.xinnet.com/domain/domainXinnetLock.html"><span>域名安全锁</span>-95%域名所有者的选择</a> <a href="http://www.xinnet.com/domain/parking.do?method=searchParkingDomainFirst"><span>域名停泊</span>-闲置域名生财之道</a> </li>
+            </ul>
+            <h2 class="mt10">组合套餐</h2>
+            <ul class="zuhe-list">
+              <li>
+                <p class="fangan1">WhoIs隐私保护+ 域名安全锁<span>12元/月</span></p>
+                <p class="fangan1">WhoIs隐私保护+ 注册局锁定<span>200元/月</span></p>
+              </li>
+            </ul>
+          </div>
+          <div class="header3-navcontent-b2 header3-navcontent-b-last">
+            <h2>域名注册服务</h2>
+            <ul class="fangan-list">
+              <li> <a href="http://www.xinnet.com/domain/domain_batch_check_new.jsp" class="fangan">域名批量查询注册<em class="hot-orange">HOT</em></a><a href="http://www.xinnet.com/Modules/agent/domain/domain_cert.jsp" class="fangan">域名证书打印</a> <a href="http://www.xinnet.com/views/uc/html/myprd/domain/domain_default.html" class="fangan">我的域名列表</a> <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=2" class="fangan"style = "margin-left:-7px;">人工域名解析<em class="word-red">NEW</em></a> <a href="http://www.xinnet.com/domain/domainAuditInOut.do?method=hypush" class="fangan">带价PUSH</a><a href="http://www.xinnet.com/real/manage.do?method=queryRealManager" class="fangan">域名实名制管理</a> </li>
+            </ul>
+            <h2 class="mt10">域名服务引导<a href="http://www.xinnet.com/service/cjwt/domain/" class="more">查看更多></a></h2>
+            <ul class="fangan-list">
+              <li> <a href="http://www.xinnet.com/service/cjwt/domain/jieshao/1163.html" class="fangan">如何购买域名</a><a href="http://www.xinnet.com/service/cjwt/domain/guanli/1264.html" class="fangan">如何做域名实名制</a> <a href="http://www.xinnet.com/service/cjwt/domain/guanli/1164.html" class="fangan">如何快捷设置域名解析</a><a href="http://www.xinnet.com/service/cjwt/domain/guohu/1184.html" class="fangan">如何将域名过户</a> <a href="http://www.xinnet.com/service/xssl/domain/1175.html" class="fangan">域名模板实用集锦</a><a href="http://www.xinnet.com/service/cjwt/domain/gaojifuwu/1172.html" class="fangan">域名停泊怎样使用</a>
+              <a href="http://www.xinnet.com/service/cjwt/domain/zhucexufei/1161.html" class="fangan">域名续费指引</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header3-navcontent" style="display:none;">
+    <div class="header3-navcontent-b">
+      <div class="header3-navcontent-b1 tab3_new">
+        <ul class="yuncp-list">
+          <li class="on"><a>域名交易</a><span>&gt;</span></li>
+          <li><a>服务指南</a><span>&gt;</span></li>
+        </ul>
+      </div>
+      <div class="content3">
+        <div class="content">
+          <div class="header3-navcontent-b2 header3-navcontent-b-last1">
+            <ul class="jtyun-list w320">
+              <li> <a href="http://www.xinnet.com/domain/domain_pingjia_search.jsp?utm=nav">
+                <h2>淘cn</h2>
+                <p>海量精选cn域名等你来淘，每天更新</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/domain/domain_yikoujia_search.jsp?f=nva">
+                <h2>一口价二手域名</h2>
+                <p>安全、便捷的域名一口价交易</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/domain/domain_book_search.jsp?f=nva">
+                <h2>域名抢注</h2>
+                <p>专业、高效的抢你想要的域名</p>
+                </a> </li>
+              <li> <a href="http://www.xinnet.com/domain/parking.do?method=searchParkingDomainFirst">
+                <h2>域名停放</h2>
+                <p>停放闲置域名，赚取额外收入</p>
+                </a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content" style="display:none;">
+          <div class="header3-navcontent-b2 header3-navcontent-b-last1">
+            <ul class="zhinan-list">
+              <li> <a href="http://www.xinnet.com/service/cjwt/domain/jiaoyi/1245.html">新网域名交易规则</a>
+                <!--<a href="javascript:;">什么是平价好域名？</a>-->
+                <a href="http://www.xinnet.com/service/cjwt/domain/jiaoyi/731.html">购买一口价二手域名常见问题</a> <a href="http://www.xinnet.com/service/cjwt/domain/jieshao/1025.html#q4">如何预定抢注域名？</a> <a href="http://www.xinnet.com/service/cjwt/domain/jieshao/1025.html">预定抢注域名常见问题</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header3-navcontent" style="display:none;">
+    <div class="header3-navcontent-b">
+      <div class="header3-navcontent-b1 tab4">
+        <ul class="yuncp-list w320">
+          <li class="on"><a href="http://www.xinnet.com/mail/mail.html">企业邮箱-全球邮外贸版</a><span>&gt;</span></li>
+          <li><a href="http://www.xinnet.com/mail/mail.html?mType=gn">企业邮箱-全球邮</a><span>&gt;</span></li>
+          <li><a href="http://www.xinnet.com/office/office.html">新办公</a><span>&gt;</span></li>
+		  <!--云推送-->
+		   <li><a href="http://www.xinnet.com/mail/zt/yuntuisong.html">云推送</a><span>&gt;</span></li>
+		   
+        </ul>
+      </div>
+      <div class="content4">
+        <div class="content">
+          <div class="header3-navcontent-b2">
+            <h2>最新活动</h2>
+            <ul class="jtyun-list w320">
+              <li>
+                <p class="p1"><a href="http://www.xinnet.com/mail/try.html">免费试用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/mail/mail-buy-detail.html">
+                               买<span> 3 </span>年送<span> 1 </span>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;买<span> 5 </span>年送<span> 2 </span>年 </a>
+                                <!-- 816周年庆！买<span> 2</span>年送<span> 1</span>年 买<span> 3</span>年送<span> 3</span>年 买<span> 5</span>年送<span> 5</span>年（限<span> 10</span>用户及以上）</a-->
+                   </p>
+                </a> </li>
+            </ul>
+          </div>
+          <div class="header3-navcontent-b2 header3-navcontent-b-last">
+            <h2>操作指南<a href="http://www.xinnet.com/service/cjwt/mail/" class="more">查看更多&gt;</a></h2>
+            <ul class="jtyun-list w320">
+              <li>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/service/cjwt/mail/shezhi/946.html">邮箱配置客户端方法</a></p>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/service/cjwt/mail/gongneng/933.html">邮箱是否有邮件监控功能，如何配置？</a></p>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/service/cjwt/mail/cjwt/962.html">邮箱域名解析配置方法</a></p>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/service/cjwt/mail/gongneng/1224.html">发出的邮件是否支持撤回，如何使用？</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content" style="display:none;">
+          <div class="header3-navcontent-b2">
+            <h2>最新活动</h2>
+            <ul class="jtyun-list w320">
+              <li>
+                <p class="p1"><a href="http://www.xinnet.com/mail/try.html?mType=gn">免费试用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/mail/mail-buy-detail.html?mType=gn">
+
+买<span> 3 </span>年送<span> 1 </span>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;买<span> 5 </span>年送<span> 2 </span>年 
+ <!--816周年庆！买<span> 2</span>年送<span> 1</span>年 买<span> 3</span>年送<span> 3</span>年 买<span> 5</span>年送<span> 5</span>年（限<span> 10</span>用户及以上）-->
+
+</a>
+
+</p>
+                </a> </li>
+            </ul>
+          </div>
+          <div class="header3-navcontent-b2 header3-navcontent-b-last">
+            <h2>操作指南<a href="http://www.xinnet.com/service/cjwt/mail/" class="more">查看更多&gt;</a></h2>
+            <ul class="jtyun-list w320">
+              <li>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/service/cjwt/mail/shezhi/946.html">邮箱配置客户端方法</a></p>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/service/cjwt/mail/gongneng/933.html">邮箱是否有邮件监控功能，如何配置？</a></p>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/service/cjwt/mail/cjwt/962.html">邮箱域名解析配置方法</a></p>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/service/cjwt/mail/gongneng/1224.html">发出的邮件是否支持撤回，如何使用？</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>	
+		
+        <div class="content" style="display:none;">
+          <div class="header3-navcontent-b2">
+            <h2>最新活动</h2>
+            <ul class="jtyun-list w320">
+              <li>
+                <p class="p1"><a href="http://www.xinnet.com/office/free.html">免费试用</a></p>
+              </li>
+            </ul>
+          </div>
+          <div class="header3-navcontent-b2 header3-navcontent-b-last">
+            <h2>操作指南<a href="http://www.xinnet.com/service/cjwt/newoffice/cjwt/index.html" class="more">查看更多&gt;</a></h2>
+            <ul class="jtyun-list w320">
+              <li>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/service/cjwt/newoffice/cjwt/1281.html">企业管理员后台如何登陆</a></p>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/service/cjwt/newoffice/cjwt/1282.html">如何批量导入企业已有员工账号</a></p>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/service/cjwt/newoffice/cjwt/1283.html">如何建立企业组织架构</a></p>
+                <p class="p1 mt10"><a href="http://www.xinnet.com/service/cjwt/newoffice/cjwt/1284.html">如何自动生成汇报关系</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+		<!--云推送-->
+		 <div class="content" style="display:none;">
+          <div class="header3-navcontent-b2">
+            <h2>最新活动</h2>
+            <ul class="jtyun-list w320">
+              <li>
+               <p class="p1"><a href="http://www.xinnet.com/mail/zt/yuntuisong.html">8.8元/3888封</a></p>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+		
+		
+		
+      </div>
+    </div>
+  </div>
+  <div class="header3-navcontent" style="display:none;">
+    <div class="header3-navcontent-b">
+      <div class="header3-navcontent-b1 tab5">
+        <ul class="yuncp-list">
+          <li class="on"><a>热门服务<span style = "background: url(http://imgi.xinnet.com/www/index/images/head-hot.png) no-repeat left top;width:11px;height:19px;margin-top: 10px;margin-left: 5px;"></span></a><span>&gt;</span></li>
+          <li><a>建站与推广</a><span>&gt;</span></li>
+          <li><a>企业应用</a><span>&gt;</span></li>
+          <li><a>服务与镜像</a><span>&gt;</span></li>
+          <!-- <li><a>安全服务</a><span>&gt;</span></li> -->
+          <li><a>网站应用插件(即将上线)</a><span>&gt;</span></li>
+        </ul>
+      </div>
+      <div class="content5">
+        <!-- 热门服务 -->
+        <div class=" content">
+          <div class = "header3-navcontent-b2 content5_lists_div" style  = "border-right:none;">
+            <div class = "content5_lists_div01">
+              <h2>建站应用 <a href="http://www.xinnet.com/yingyong/ymwz/ymwz.html" target="_blank" class = "content5_lists_div01_h2_a">查看更多></a></h2>
+              <ul class = "content5_lists_ul01">
+                <li style = "margin-left: 0px;">
+                  <a class = "content5_lists_divs_a" href = "http://www.xinnet.com/site/site.html" target="_blank">
+                  </a>
+                  <div>
+                    <h2 class = "fir_h2">专属定制网站</h2>
+                    <p>呈现与众不同的你，网站更需要定制</p>
+                    <a href="http://www.xinnet.com/site/site.html" target="_blank">全程一对一服务</a>
+
+                  </div>
+                </li>
+                <li>
+                  <a class = "content5_lists_divs_a" href = "http://www.xinnet.com/yingyong/ymwz/ymwz.html" target="_blank">
+                  </a>
+                  <div>
+
+                    <!--h2>OA办公平台</h2>
+                    <p>办公自动化，电脑进行全自动的办公</p>
+                    <a href="http://www.xinnet.com/yingyong/ibos/ibos.html" target="_blank">提高效率节约成本</a-->
+                      <h2 class = "fir_h2">快速创建网站</h2>
+                    <p>企业建站首选，全包最低仅需980元</p>
+                    <a href="http://www.xinnet.com/yingyong/ymwz/ymwz.html" target="_blank">在线用户专享福利</a>
+                  </div>
+                </li>
+                <li>
+                  <a class = "content5_lists_divs_a" href = "http://www.xinnet.com/yingyong/ydysc/ydysc.html" target="_blank">
+                  </a>
+                  <div>
+                    <h2>电商建站平台</h2>
+                    <p>同时拥有PC、手机、微信端购物网站</p>
+                    <a href="http://www.xinnet.com/yingyong/ydysc/ydysc.html" target="_blank"><span>三网合一</span>商务电商建站</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class = "content5_lists_div02">
+              <h2>服务与镜像<a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=2" target="_blank" class = "content5_lists_div01_h2_a">查看更多></a></h2>
+              <ul class = "content5_lists_ul01">
+                <li style = "margin-left: 0px;">
+                  <a class = "content5_lists_divs_a" href = "http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=3" target="_blank">
+                  </a>
+                  <div>
+                    <h2>数据迁移</h2>
+                    <p>数据库迁移服务，提供网站配置</p>
+                    <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=3" target="_blank">为<span>1600</span>人提供服务</a>
+                  </div>
+                </li>
+                <li>
+                  <a class = "content5_lists_divs_a" href = "http://www.xinnet.com/views/fw/bdcs.jsp" target="_blank">
+                  </a>
+                  <div>
+                    <h2>网站病毒查杀</h2>
+                    <p>对网站或服务器被黑问题进行处理</p>
+                    <a href="http://www.xinnet.com/views/fw/bdcs.jsp" target="_blank">已为<span>60%</span>人服务</a>
+                  </div>
+                </li>
+                <li>
+                  <a class = "content5_lists_divs_a" href = "http://www.xinnet.com/views/fw/dyw.jsp" target="_blank">
+                  </a>
+                  <div>
+                    <h2>云主机代运维<em class="word-red">NEW</em></h2>
+                    <p>服务器的所有问题提供技术支持</p>
+                    <a href="http://www.xinnet.com/views/fw/dyw.jsp" target="_blank"><span>70%</span>用户存在安全隐患</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 建站与推广 -->
+        <div class = "content" style = "display: none;">
+          <div class = "header3-navcontent-b2 content5_lists_div2">
+             <h2>企业建站</h2>
+            <ul class="jtyun-list">
+             <li>
+                        <a href="http://www.xinnet.com/yingyong/ymwz/ymwz.html" class="hover_jzsq" target="_blank"><p>云建站 - 快速创建企业官网</p><p>云模板网站/云定制官网 双箭齐发！</p>
+                        <ul class="ul_list2" style="height:84px;">
+                          <li>中小企业建站首选</li>
+                          <li style="margin-left: 10px;">赠送网站推广服务</li>
+          <li>模板网站最低<span>980</span>元</li>
+                          <li style="margin-left: 10px;">定制网站最低<span>3980</span>元</li>
+                         </ul>
+                  </a>
+             </li></ul>
+          
+                    <br>
+          <h2>专属建站</h2>
+                    <ul class="jtyun-list">
+                      <li>
+                        <a href="http://www.xinnet.com/site/site.html" target="_blank"><p>超云 • 企业级官网（全终端定制）</p><p>一次性服务到位，定制企业官网对的设计师1对1服务，全程线上智能管控</p></a>
+                      </li>
+                </ul> 
+
+
+               
+          </div>
+          <div class = "header3-navcontent-b2 content5_lists_div2">
+            <h2>电商建站平台</h2>
+            <ul class = "jtyun-list">
+              <li>
+                <a href="http://www.xinnet.com/yingyong/himall/himall.html" target="_blank"><p>多店铺商城</p><p>多用户商城系统，开启全民开店时代</p></a>
+              </li>
+              <li>
+                <a href="http://www.xinnet.com/yingyong/ydysc/ydysc.html" target="_blank"><p>零售直销商城</p><p>专业的B2C商城，全渠道零售解决方案</p></a>
+              </li>
+              <li>
+                <a href="http://www.xinnet.com/yingyong/ydyfx/ydyfx.html" target="_blank"><p>分销代理商城</p><p>全网分销型商城，只为帮您货销天下</p></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header3-navcontent-b2 content5_lists_div2" style="border-right: none;">
+            <h2>网站推广</h2>
+            <ul class="jtyun-list">
+              <li>
+                <a href="http://www.xinnet.com/yingyong/bktg/bktg.html" target="_blank"><p>百客推广 - 全网最具性价比的推广方式</p><p>搜索框直达+文字链广告，保证每天百人以上访客，可按照区域定向投放。现在购买即赠送云模板网站一套！</p></a>
+              </li>              
+            </ul> 
+
+          </a></li></ul></div>
+
+
+
+        </div>
+        <!-- 企业应用 -->
+        <div class = "content" style = "display: none;">
+          <div class = "header3-navcontent-b2" style = "border-right: none;">
+            <ul class="jtyun-list">
+              <li> <a href="http://www.xinnet.com/office365/office365.html">
+                <h2>Office365</h2>
+                <p>满足您工作所需的office办公工具</p>
+                </a> </li>
+
+               <li> <a href="http://www.xinnet.com/yingyong/ibos/ibos.html">
+                <h2>OA办公平台</h2>
+                <p>开源OA系统，有效提升工作效率和销售业绩</p>
+                </a> </li>
+            </ul> 
+          </div>
+        </div>
+        <!-- 云服务 -->
+        <div class = "content" style = "display: none;">
+          <div class = "list_tabs_02">
+            <ul>
+              <li class = "on_hover">域名服务<span>&gt;</span></li>
+              <li>主机服务<span>&gt;</span></li>
+              <li>安全服务<span>&gt;</span></li>
+              <li>更多服务<span>&gt;</span></li>
+            </ul>
+          </div>
+          <div class = "yfw_contents">
+            <div class  = "yfw_content1">
+              <div class = "header3-navcontent-b2" style = "border-right: none;">
+                <ul class="jtyun-list yfq_ul_width">
+                  <li>
+                    <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=2">
+                    <h2>人工域名解服务</h2>
+                    <p>专人为您解决关于域名解析过程中的问题，解析快速稳定安全</p>
+                    </a> 
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class = "yfw_content2" style = "display: none;">
+              <div class = "header3-navcontent-b2">
+                <ul class="jtyun-list yfq_ul_width">
+                  <li>
+                    <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=3" target="_blank">
+                      <h2>数据迁移</h2>
+                      <p>网站程序、数据库迁移,让您的网站轻松可以访问</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=1" target="_blank">
+                      <h2>负载均衡配置</h2>
+                      <p>加强数据处理能力、提高网络的灵活性和可用性</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.xinnet.com/views/fw/aqw.jsp" target="_blank">
+                      <h2>云主机安全卫士</h2>
+                      <p>安全防护系统，能够全面解决网站面临的各种安全问题</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.xinnet.com/views/fw/dyw.jsp" target="_blank">
+                      <h2>云主机代运维</h2>
+                      <p>全托式服务，服务器的所有问题提供技术支持</p>
+                    </a>
+                  </li>
+				  
+				  
+				   <li>
+                    <a href="http://www.xinnet.com/views/fw/xjdyw.jsp" target="_blank">
+                      <h2>虚拟主机代运维<em class="word-red">NEW</em></h2>
+                      <p>帮您快速解决虚机使用过程中各类技术问题</p>
+                    </a>
+                  </li>
+				  
+                </ul>
+              </div>
+              <div class = "header3-navcontent-b2" style = "border-right: none;">
+                  <ul class="jtyun-list yfq_ul_width">
+                    <li>
+                      <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=4">
+                      <h2>数据险</h2>
+                      <p>到期主机给予全方位的网站代码找回服务</p>
+                      </a> 
+                    </li>
+                    <li>
+                      <!-- <a href=""> -->
+                      <h2>网站环境标准配置（即将上线）</h2>
+                      <p>安装及配置、站点配置、数据库连接配置、Java环境配置、PHP环境、IIS ASP.NET环境等，根据自身需求随意搭配选择</p>
+                      <!-- </a>  -->
+                    </li>
+                    <li>
+                      <!-- <a href=""> -->
+ <a href="http://www.xinnet.com/views/fw/bdcs.jsp">
+                      <h2>网站病毒查杀<em class="word-red">NEW</em></h2>
+                      <p>网站访问慢以及生产环境报错的解决，网站运行中由于环境配置问题导致网站报错，解决了长期困扰网站防御的全部安全问题</p>
+                       </a>  
+                    </li>
+                    <li>
+                      <!-- <a href=""> -->
+                      <h2>安全服务包（即将上线）</h2>
+                      <p>为您的服务器，网站，数据库，业务提供一站式的安全服务</p>
+                      <!-- </a>  -->
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <div class = "yfw_content3" style = "display: none;">
+              <div class = "header3-navcontent-b2" style = "border-right: none;">
+            <ul class="jtyun-list yfq_ul_width">
+              <li> <a href="http://www.xinnet.com/views/fw/aqw.jsp">
+                <h2>云主机安全卫士</h2>
+                <p>安全防护，能够全面解决网站面临的各种安全问题</p>
+                </a> </li>
+
+               <li> <a href="http://www.xinnet.com/views/fw/dyw.jsp">
+                <h2>云主机代运维</h2>
+                <p>全托式服务，服务器的所有问题提供技术支持</p>
+                </a> </li>
+                <li><a href="http://www.xinnet.com/views/fw/bdcs.jsp">
+                  <h2>网站病毒查杀<em class="word-red">NEW</em></h2>
+                  <p>网站访问慢以及生产环境报错的解决，网站运行中由于环境配置问题导致网站报错，解决了长期困扰网站防御的全部安全问题</p></a>
+                </li>
+                <li>
+                  <h2>安全服务包（即将上线）</h2>
+                  <p>为您的服务器，网站，数据库，业务提供一站式的安全服务</p>
+                </li>
+            </ul> 
+          </div>
+            </div>
+            <div class = "yfw_content4" style = "display: none;">
+              <div class = "header3-navcontent-b2" style = "border-right: none;">
+                <ul class="jtyun-list yfq_ul_width">
+                  <li>
+                    <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=2">
+                    <h2>数据险</h2>
+                    <p>到期主机给予全方位的网站代码找回服务</p>
+                    </a> 
+                  </li>
+                  <li>
+                    <!-- <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=2"> -->
+                    <h2>网站环境标准配置（即将上线）</h2>
+                    <p>安装及配置、站点配置、数据库连接配置、Java环境配置、PHP环境、IIS ASP.NET环境等，根据自身需求随意搭配选择</p>
+                    <!-- </a>  -->
+                  </li>
+                  <li>
+                    <!-- <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=2"> -->
+                    <h2>镜像（即将上线）</h2>
+                    <p>一种文件存储形式，可以把许多文件做成一个镜像文件，存在一个完全相同的副本。</p>
+                    <!-- </a>  -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <div class = "header3-navcontent-b2" style = "border-right: none;">
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header3-navcontent" style="display:none;">
+    <div class="header3-navcontent-b">
+      <div class="header3-navcontent-b1 tab6">
+        <ul class="yuncp-list">
+          <li class="on"><a>新手用户指引</a><span>&gt;</span></li>
+          <li><a>热点服务</a><span>&gt;</span></li>
+          <li><a>主机课堂</a><span>&gt;</span></li>
+          <li><a>下载服务</a><span>&gt;</span></li>
+        </ul>
+      </div>
+      <div class="content6">
+      	<div class="content">
+          <div class="header3-navcontent-b2 header3-navcontent-b-last1">
+            <ul class="jtyun-list w320">
+              	<li> <a href="http://www.xinnet.com/service/cjwt/domain/guanli/1164.html">
+                <h2>域名解析入门</h2>
+                </a> </li>
+                <li> <a href="http://www.xinnet.com/serve/serve/bazt.html">
+                <h2>网站备案入门</h2>
+                </a> </li>
+                <li> <a href="http://www.xinnet.com/service/cjwt/dtkl.html">
+                <h2>动态口令使用入门</h2>
+                </a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content" style="display:none;">
+          <div class="header3-navcontent-b2 header3-navcontent-b-last1">
+            <ul class="jtyun-list w320">
+              	<li> <a href="http://www.xinnet.com/service/cjwt/domain/guohu/1184.html">
+                <h2>如何将域名过户</h2>
+                </a> </li>
+                <li> <a href="http://www.xinnet.com/service/cjwt/domain/zhucexufei/1263.html">
+                <h2>.com/.net域名实名制常见问题</h2>
+                </a> </li>
+                <li> <a href="http://www.xinnet.com/service/cjwt/domain/guanli/1264.html">
+                <h2>会员如何进行域名实名制</h2>
+                </a> </li>
+                <li> <a href="http://www.xinnet.com/service/cjwt/domain/guanli/1327.html">
+                <h2>代理如何提交域名实名制</h2>
+                </a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content" style="display:none;">
+          <div class="header3-navcontent-b2 header3-navcontent-b-last1">
+            <ul class="jtyun-list w320">
+              <li> <a href="http://www.xinnet.com/service/cjwt/idc/jishu/1191.html ">
+                <h2>什么是攻击？如何预防？</h2>
+                </a> </li>
+
+                <li> <a href="http://www.xinnet.com/service/cjwt/idc/jishu/1441.html">
+                <h2>Linux数据盘如何扩容</h2>
+                </a> </li>
+                <li> <a href="http://www.xinnet.com/service/cjwt/idc/jishu/1442.html">
+                <h2>Linux如何分区格式化及挂载</h2>
+                </a> </li>
+                <li> <a href="http://www.xinnet.com/service/cjwt/idc/jishu/1443.html">
+                <h2>windows如何分区格式化及挂载</h2>
+                </a> </li>
+                <li> <a href="http://www.xinnet.com/service/cjwt/idc/jishu/1444.html">
+                <h2>Windows数据盘如何扩容</h2>
+                </a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content" style="display:none;">
+          <div class="header3-navcontent-b2 header3-navcontent-b-last1">
+            <ul class="jtyun-list w320">
+              	<li> <a href="http://www.xinnet.com/service/zlxz/domain/694.html">
+                <h2>域名管理权变更</h2>
+                </a> </li>
+                <li> <a href="http://www.xinnet.com/service/zlxz/richang/1156.html">
+                <h2>会员信息修改</h2>
+                </a> </li>
+                <li> <a href="http://www.xinnet.com/service/cjwt/domain/zhucexufei/768.html">
+                <h2>Gov域名注册申请表</h2>
+                </a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- header end-->
+
+
+
+<!-- header end-->
+
+<div class="header3-1">
+  <div class="slide-banner">
+  
+
+
+<!--div class="slide-banner-b" style="z-index: 1; background: #229fe2 url(http://imgi.xinnet.com/www/index/images/banner/com33.jpg) no-repeat center top">
+		<a class = "public_banner_a slide_com33" href="http://www.xinnet.com/user/user.do?method=toRegister" target="_blank">
+		</a>
+		<div class = "public_banner_div">
+			<h2 class = "zx_h2">新用户注册独享&nbsp;<span style = "color:#fde604;font-weight: bold;">.com35元</span></h2>
+			<p class = "public_p1">新用户注册送<span style = "color: #fde604;"><strong>18</strong>元优惠券</span></p>
+			<p><a target="_blank" href="http://www.xinnet.com/user/user.do?method=toRegister" class = "public_p2_a slide_com33">查看详情</a></p>
+		</div>
+  	</div>
+ <div class="slide-banner-b" style=" background: #1a1569 url(http://imgi.xinnet.com/www/index/images/banner/qxhd.jpg) no-repeat center top">
+		<a class = "public_banner_a" href="http://www.xinnet.com/domain/zt/qixi.html" target="_blank">
+		</a>
+		<div class = "public_banner_div">
+			<h2 class = "zx_h2" style = "color:#ffda65">表白之日&nbsp;以你之名说爱你</h2>
+			<p class = "public_p1">.我爱你域名&nbsp;<span style = "color: #FF9800;font-weight: bold;">9.9/首年</span>&nbsp;8.24-8.31</p>
+			<p><a target="_blank" href="http://www.xinnet.com/domain/zt/qixi.html" class = "public_p2_a">查看详情</a></p>
+		</div>
+  	</div-->
+	
+     <!--div class="slide-banner-b" style="z-index:1;background:url(http://imgi.xinnet.com/www/index/images/banner/ymsmz.jpg) no-repeat center top;">
+		<a class = "public_banner_a" href="http://www.xinnet.com/xinnews/gonggao/28762.html" target="_blank">
+		</a>
+		<div class = "public_banner_div">
+			<h2 class = "zx_h2" style = "color:#83c3e6;">域名实名制-重要通知</h2>
+			<p class = "public_p1">未实名域名将<span style = "color:#ff0000;">停止解析</span></p>
+			<p><a target="_blank" href="http://www.xinnet.com/xinnews/gonggao/28762.html" class = "public_p2_a">查看详情</a></p>
+		</div>
+    </div -->
+	
+   <!-- 20170816周年庆-->
+	
+	
+	<!--div class="slide-banner-b" style="z-index: 1; background: url(http://imgi.xinnet.com/www/index/images/banner/znhd.jpg) no-repeat center top">
+		<a class = "public_banner_a" href="http://www.xinnet.com/composite/zt/znhd.html" target="_blank">
+		</a>
+		<div class = "public_banner_div">
+			<h2 class = "zx_h2" style = "color:#ffd13e;">816周年狂欢</h2>
+			<p class = "public_p1">爆款组合返场&nbsp;错过等明年</p>
+			<p><a target="_blank" href="http://www.xinnet.com/composite/zt/znhd.html" class = "public_p2_a">查看详情</a></p>
+		</div>
+  	</div-->
+	
+    <!--div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/index/images/banner/jty.jpg) no-repeat center top;"> 
+      <a class = "public_banner_a" href="http://www.xinnet.com/cs/CloudSolutions.html" target="_blank">
+      </a>
+      <div style = "width:1200px;position: absolute;top:258px;left:50%;margin-left:-600px;height:auto;">
+        <h2 class = "jty_h2">箭头云服务器&nbsp;<span class = "jty_h2_span1">27</span><span  class = "jty_h2_span2">元</span><span class = "jty_h2_span3">/月起</span></h2>
+        <p class = "jty_p1">为中国企业提供安全稳定&nbsp;简单易用&nbsp;扩展性强的弹性云计算服务</p>
+        <p><a href="http://www.xinnet.com/cs/CloudSolutions.html" target="_blank" class = "jty_p2_a">查看详情</a></p>
+      </div>
+    </div -->
+    <div class="slide-banner-b" style="z-index: 1;background:url(http://imgi.xinnet.com/www/index/images/banner/jtyyy.jpg) no-repeat center top;">
+        <a class = "public_banner_a" href="http://www.xinnet.com/cs/CloudSolutions.html" target="_blank"  onclick="traker.traceCount('xinnet.com','110','7943');">
+            </a>
+        <div class = "public_banner_div" style = "top:225px;">
+        	<h2 class = "jty_h2">箭头云服务器</h2>
+			<p class = "jty_p1" style = "font-size: 29px;color:#2c6a9f;"><span style = "color:#cc00ff">50秒</span>完成部署,<span style = "color:#cc00ff">99.99%数据</span>可靠性,<span style = "color:#cc00ff">7*24小时</span>专业服务</p>
+            <p><a href="http://www.xinnet.com/cs/CloudSolutions.html" target="_blank"  onclick="traker.traceCount('xinnet.com','110','7943');" class = "jty_p2_a" style = "width:246px;height:60px;font-size: 28px;line-height: 60px;border-radius: 32px;margin-top: 40px;margin-left:-123px;background-color: #71ddec;">查看详情</a></p>
+        </div>
+  	</div>
+
+     <!--div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/index/images/banner/xj.jpg) no-repeat center top;">
+      <a class = "public_banner_a" href="http://www.xinnet.com/xunizhuji.html" target="_blank" onclick="traker.traceCount('xinnet.com','110','7944');">
+      </a>
+
+      <div class = "public_banner_div">
+        <h2 class = "xnzj_h2">全新云虚拟主机&nbsp;<span class= "xnzj_h2_span1">49元</span><span class = "xnzj_h2_span2">/年起</span></h2>
+        <p class = "public_p1">多线BGP&nbsp;&nbsp;99.9%高稳定性&nbsp;&nbsp;移动互联访问顺畅</p>
+        <p><a target="_blank" href="http://www.xinnet.com/xunizhuji.html" onclick="traker.traceCount('xinnet.com','110','7944');" class = "public_p2_a">查看详情</a></p>
+      </div>
+    </div-->
+
+    <!-- yxjbg -->
+	<!--div class="slide-banner-b" style="background: #1a3c5f url(http://imgi.xinnet.com/www/index/images/banner/yxj_new.jpg) no-repeat center top">
+		<a class = "public_banner_a" href="http://www.xinnet.com/virtualhost/virtualhost.html" target="_blank" onclick="traker.traceCount('xinnet.com','110','7981');">
+		</a>
+		<div class = "public_banner_div">
+			<h2 class = "zx_h2">英雄，<span style = "color:#ff7b41;">虚机半价</span>还不出手？</h2>
+			<p class = "public_p1">限时特惠&nbsp;下手要快！</p>
+			<p><a target="_blank" href="http://www.xinnet.com/virtualhost/virtualhost.html" class = "public_p2_a" onclick="traker.traceCount('xinnet.com','110','7981');">查看详情</a></p>
+		</div>
+  	</div-->
+  	<!-- end -->
+<!-- 中秋虚机hd -->
+	<div class="slide-banner-b" style="background: #1c1e43 url(http://imgi.xinnet.com/www/index/images/banner/zqxjHd.jpg) no-repeat center top">
+		<a class = "public_banner_a" href="http://www.xinnet.com/composite/zhongqiu.html" target="_blank">
+		</a>
+		<div class = "public_banner_div">
+			<h2 class = "zx_h2">新网感<span style = "color:#ff6b00;">“蟹”</span>有你</h2>
+			<p class = "public_p1">9.19-9.30大闸蟹礼券&nbsp;敬请笑纳 </p>
+			<p><a target="_blank" href="http://www.xinnet.com/composite/zhongqiu.html" class = "public_p2_a">查看详情</a></p>
+		</div>
+  	</div>
+  	<!-- end -->
+   
+<!-- shopbg -->
+	<div class="slide-banner-b" style="background: #ba1533 url(http://imgi.xinnet.com/www/index/images/banner/shophd_new.jpg) no-repeat center top">
+		<a class = "public_banner_a" href="http://www.xinnet.com/domain/shop.html" target="_blank" onclick="traker.traceCount('xinnet.com','110','7945');">
+		</a>
+		<div class = "public_banner_div">
+			<h2 class = "zx_h2"><span style = "color:#ff6501;">.shop</span>周年庆全球闪卖启动中</h2>
+			<p class = "public_p1">史前低价，持续整个九月</p>
+			<p><a target="_blank" href="http://www.xinnet.com/domain/shop.html" onclick="traker.traceCount('xinnet.com','110','7945');" class = "public_p2_a">查看详情</a></p>
+		</div>
+  	</div>
+  	<!-- end -->
+    <!--div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/index/images/banner/ysj.jpg) no-repeat center top;">
+		<a class = "public_banner_a" href="http://www.xinnet.com/domain/newgtld.html" target="_blank">
+		</a>
+		<div class = "public_banner_div">
+			<h2 class = "zx_h2">赢暑假！.shop域名年中大促</h2>
+			<p class = "public_p1" style = "color:#e7ecf3;">活动时间：2017.6.26日至2017.6.30日</span></p>
+			<p><a target="_blank" href="http://www.xinnet.com/domain/newgtld.html" class = "public_p2_a">查看详情</a></p>
+		</div>
+  	</div -->
+    <!--div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/index/images/banner/xsl.jpg) repeat center top;">
+      <a href="http://www.xinnet.com/composite/zt/xinrenyouli.html" target="_blank" class = "public_banner_a"></a>
+      <div class = "public_banner_div">
+        <h2 class = "xsl_h2">网聚人气圈子&nbsp;<span class = "xsl_h2_span1"></span><span class = "xsl_h2_span2"><strong>&nbsp;club1元</strong>/首年</span></h2>
+        <p class = "public_p1">你的爱好成就你的世界 全球邮首年<span class = "xsl_p2_span1"><strong>15</strong></span>元</p>
+        <p><a target="_blank" href="http://www.xinnet.com/composite/zt/xinrenyouli.html" class = "public_p2_a">查看详情</a></p>
+      </div>
+    </div -->
+    <!-- div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/index/images/banner/sjzx.jpg) no-repeat center top;">
+      <a class = "public_banner_a" href="http://www.xinnet.com/virtualhost/virtualhost.html" target="_blank">
+      </a>
+      <div class = "public_banner_div">
+        <h2 class = "sjzx_h2">新网携手世纪互联打造<span class = "sjzx_h2_span1">金牌数据中心</span></h2>
+        <p class = "public_p1">多线BGP&nbsp;&nbsp;99.9%高稳定性&nbsp;&nbsp;移动互联访问顺畅</p>
+        <p><a target="_blank" href="http://www.xinnet.com/virtualhost/virtualhost.html" class = "public_p2_a">查看详情</a></p>
+      </div>
+    </div -->
+	<!--协同办公活动start-->
+	
+	
+	<!-- 办公新主义 -->
+	<div class="slide-banner-b" style="background: #4b4e55 url(http://imgi.xinnet.com/www/index/images/banner/qqy_new2017.jpg) no-repeat center top">
+		<a class = "public_banner_a" href="http://www.xinnet.com/mail/xietong.html" target="_blank">
+		</a>
+		<div class = "public_banner_div">
+			<h2 class = "zx_h2">办公<span style = "color:#1589ff;">新主义</span>限时体验</h2>
+			<p class = "public_p1">协同办公一站式解决方案，小微企业快速成长的必备利器 </p>
+			<p><a target="_blank" href="http://www.xinnet.com/mail/xietong.html" class = "public_p2_a">查看详情</a></p>
+		</div>
+  	</div>
+  	<!-- end -->
+	
+	<!--协同办公活动end-->
+	
+    <div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/index/images/banner/gyz.jpg) no-repeat center top;">
+      <a class = "public_banner_a" href="http://www.xinnet.com/zhaoshang.html" target="_blank" onclick="traker.traceCount('xinnet.com','110','7946');">
+      </a>
+      <div class = "public_banner_div">
+        <h2 class = "gyz_h2">耕云者</h2>
+        <p class = "public_p1">云计算你来，云基础服务配套交给新网</p>
+        <p><a href="http://www.xinnet.com/zhaoshang.html" target="_blank"  onclick="traker.traceCount('xinnet.com','110','7946');" class = "public_p2_a">查看详情</a></p>
+      </div>
+    </div>
+   
+    <!--div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/index/images/banner/yx.jpg) no-repeat center top;">
+    <a class = "public_banner_a" href="http://www.xinnet.com/mail/mail.html" target="_blank">
+              </a>
+        <div class = "public_banner_div">
+          <h2 class = "yx_h2">随时随地<span class = "yx_h2_span1">&nbsp;全球畅邮</span></h2>
+          <p class = "public_p1" style = "color:#1985b8">便捷、稳定，畅通，只为更专业</p>
+      <p><a target="_blank" href="http://www.xinnet.com/mail/try.html?mType=gn" class = "public_p2_a" style = "color:#1985b8;border-color:#1985b8;">查看详情</a></p>
+        </div>
+    </div-->
+
+    <div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/index/images/banner/qqy_new.jpg) no-repeat center top;">
+		<a class = "public_banner_a" href="http://www.xinnet.com/mail/mail.html" target="_blank"  onclick="traker.traceCount('xinnet.com','110','7947');">
+		</a>
+		<div class = "public_banner_div">
+			<h2 class = "zx_h2" style = "background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d15e60), to(#db2a69));background:gradient(linear, 0% 0%, 0% 100%, from(#d15e60), to(#db2a69));color: transparent;color:#f56471; -webkit-text-fill-color: transparent;-webkit-background-clip: text;">随时随地,全球畅游</h2>
+			<p class = "public_p1">便捷,稳定,畅通,只为更专业</p>
+			<p><a target="_blank" href="http://www.xinnet.com/mail/mail.html"  onclick="traker.traceCount('xinnet.com','110','7947');" class = "public_p2_a">查看详情</a></p>
+		</div>
+  	</div>
+
+     <div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/index/images/banner/jzhd.jpg) no-repeat center top;">
+		<a class = "public_banner_a" href="http://www.xinnet.com/yingyong/hd/jzhd.html" target="_blank"  onclick="traker.traceCount('xinnet.com','110','7948');">
+		</a>
+		<div class = "public_banner_div">
+			<h2 class = "zx_h2" style = "color:#6b96f5;">如何建立属于自己的网站</h2>
+			<p class = "public_p1">一站式解决，节省时间，提高效率</span></p>
+			<p><a target="_blank" href="http://www.xinnet.com/yingyong/hd/jzhd.html" onclick="traker.traceCount('xinnet.com','110','7948');" class = "public_p2_a">查看详情</a></p>
+		</div>
+  	</div>
+
+    <!--div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/index/images/banner/zx.jpg) no-repeat center top;">
+    <a class = "public_banner_a" href="http://www.xinnet.com/domain/online.html" target="_blank">
+    </a>
+    <div class = "public_banner_div">
+      <h2 class = "zx_h2">热烈庆祝&nbsp;<span class = "zx_h2_span1">.在线</span>&nbsp;域名通过工信部审批</h2>
+      <p class = "public_p1">符合中国文化习惯的中文通用顶级域名</p>
+      <p><a target="_blank" href="http://www.xinnet.com/domain/online.html" class = "public_p2_a">查看详情</a></p>
+    </div>
+    </div-->
+	
+	
+	<!--div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/index/images/banner/wantj.jpg) no-repeat center top;">
+			<a class = "public_banner_a" href="http://www.xinnet.com/domain/newgtld.html" target="_blank">
+		</a>
+		<div class = "public_banner_div">
+			<h2 class = "zx_h2"><strong>.我爱你</strong>&nbsp;新注/续费/转移只需<span style = "color:#ffef6c;font-weight: bold;">52</span>元</h2>
+			<p class = "public_p1" style = "color:#e7ecf3;">7月1日开始，示爱变得更简单！</p>
+			<p><a target="_blank" href="http://www.xinnet.com/domain/newgtld.html" class = "public_p2_a">查看详情</a></p>
+		</div>
+  	</div-->
+
+
+
+     <!--div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/newimages/banner/index2Banner/cultivator20170426.jpg) repeat center center;">
+  		<a target="_blank" href="http://www.xinnet.com/zhaoshang.html">
+  			<div>
+  				<img src="http://imgi.xinnet.com/www/newimages/banner/index2Banner/index_banner2_text.png" width="570px" height="240px"/>
+  			</div>
+  		</a>
+  	</div>
+
+    <div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/newimages/banner/index2Banner/index_banner20170517.jpg) repeat center center;">
+  		<a target="_blank" href="http://www.xinnet.com/composite/zt/xinrenyouli.html">
+  			<div>
+  				<img src="http://imgi.xinnet.com/www/newimages/banner/index2Banner/index_banner2_text.png" width="570px" height="240px"/>
+  			</div>
+  		</a>
+  	</div>
+     <div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/newimages/banner/index2Banner/index_banner20160214.jpg) repeat center center;">
+  		<a target="_blank" href="http://www.xinnet.com/domain/domain_pingjia_search.jsp?utm=nav">
+  			<div>
+  				<img src="http://imgi.xinnet.com/www/newimages/banner/index2Banner/index_banner2_text.png" width="570px" height="240px"/>
+  			</div>
+  		</a>
+  	</div>
+    <div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/newimages/banner/index2Banner/index_banner20160217.jpg) repeat center center;">
+  		<a target="_blank" href="http://www.xinnet.com/virtualhost/virtualhost.html">
+  			<div>
+  				<img src="http://imgi.xinnet.com/www/newimages/banner/index2Banner/index_banner2_text.png" width="570px" height="240px"/>
+  			</div>
+  		</a>
+</div>
+  <div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/newimages/banner/index2Banner/banner_mail.jpg) repeat center center;">
+  		<a target="_blank" href="http://www.xinnet.com/mail/mail.html">
+  			<div>
+  				<img src="http://imgi.xinnet.com/www/newimages/banner/index2Banner/index_banner2_text.png" width="570px" height="240px"/>
+  			</div>
+  		</a>
+  	</div>
+
+    <div class="slide-banner-b" style="background:url(http://imgi.xinnet.com/www/newimages/banner/index2Banner/online_banner20170417.jpg) repeat center center;">
+  		<a target="_blank" href="http://www.xinnet.com/domain/online.html">
+  			<div>
+  				<img src="http://imgi.xinnet.com/www/newimages/banner/index2Banner/index_banner2_text.png" width="570px" height="240px"/>
+  			</div>
+  		</a>
+  	</div-->
+    <ul class="banner_slide_ul">
+      <li><a href="javascript:;" class="on"></a></li>
+      <li><a href="javascript:;"></a></li>
+      <li><a href="javascript:;"></a></li>
+      <li><a href="javascript:;"></a></li>
+      <li><a href="javascript:;"></a></li>
+      <li><a href="javascript:;"></a></li>
+	  <li><a href="javascript:;"></a></li>
+	      
+    </ul>
+    <div class="yumingsousuo-bg"></div>
+  </div>
+  <div class="yumingsousuo">
+    <div class="yumingsousuo-content">
+      <ul>
+        <li class="yumingsousuo-b1" style="width: 172px;">
+          <div style="margin-top:25px;overflow:hidden;">
+            <p>超过<em>10,000,000</em></p>
+            <p>域名在新网注册</p>
+          </div>
+        </li>
+        <li class="yumingsousuo-b2">
+          <div class="yumingsousuo-b21">
+            <div class="yumingsousuo-b21-yumingjiageCon">
+              <div class="yumingsousuo-b21-yumingjiageCon1">
+                <div class="yumingsousuo-b21-yumingjiage">
+                                <!--a href="http://www.xinnet.com/domain/newgtld.html">.xyz</a> <span>8元</span-->
+								<a href="http://www.xinnet.com/domain/tld-com.html">.com</a> <span>53元</span>
+								<a href="http://www.xinnet.com/domain/tld-cn.html">.cn</a> <span>19元</span>
+                               
+								
+								<a href="http://www.xinnet.com/domain/tld-info.html">.info</a> <span  style="">30元</span>
+								<a href="http://www.xinnet.com/domain/tld-mobi.html">.mobi</a> <span>30元</span>
+								 <a href="http://www.xinnet.com/domain/tld-cn.html">.vip</a> <span>33元</span>
+							</div>
+							<div class="yumingsousuo-b21-yumingjiage">
+                              
+                               <a href="http://www.xinnet.com/domain/newgtld.html">.top</a> <span>11元</span>
+                               <a href="http://www.xinnet.com/domain/newgtld.html">.club</a> <span>18元</span>
+                               <a href="http://www.xinnet.com/domain/newgtld.html">.ink</a> <span  style="">22元</span>
+                               <a href="http://www.xinnet.com/domain/newgtld.html">.pro</a> <span >32元</span>
+                               <a href="http://www.xinnet.com/domain/newgtld.html">.ren</a> <span>46元</span>
+								
+								
+								
+								
+
+							</div>
+                            <div class="yumingsousuo-b21-yumingjiage">                      
+                              
+								<a href="http://www.xinnet.com/domain/newgtld.html">.wang</a> <span>19元</span>
+
+                                <a href="http://www.xinnet.com/domain/online.html">.在线</a> <span>30元</span>
+								
+                                 <a href="http://www.xinnet.com/domain/newgtld.html">.网店</a> <span >1280元</span>
+                               
+								<a href="http://www.xinnet.com/domain/newgtld.html">.site</a> <span >12元</span>
+                                                          <a href="http://www.xinnet.com/domain/tld-cc.html">.cc</a> <span  style="">59元</span>
+							</div>
+              </div>
+            </div>
+            <div class="yumingsousuo-b21-op"> <a href="http://www.xinnet.com/domain/list.do?method=listDomainManage&serviceState=03&forward=renewing&firstTime=yes&tab=con2" class="marl235" style="margin-left:184px;" >域名续费</a> <a href="http://www.xinnet.com/domain/domainIn.html">域名转入</a> </div>
+          </div>
+<form id="domainForm" name="domainForm" method="post" action="http://www.xinnet.com/domain/search.do?method=toResult">
+					<input type="hidden" value="0" name="domainSuffixType" id="domainSuffixType">
+					<input type="hidden" name="searchSuffix" id="searchSuffix" value=".com">
+          <div class="yumingsousuo-b22">
+            <div>
+              <input  id="prefix" name="prefix" type="text" value="输入域名，如：xinnet"/>
+            </div>
+            <div class="yumingsousuo-b22-ym">.com</div>
+            <div> <a href="javascript:submitform7();">查域名</a> </div>
+             <!-- 一句话弹窗 -->
+							<div class="popTple03 onOpenN" style="left:50%; top:50%;display:none;">
+								<p class="pc11PFalse" id="message">查询内容不能为空！</p>
+							</div>
+							<div class="popTple03 onOpenLoading" style="left:50%; top:50%;display:none;">
+								<p class="pcLoading">加载中...</p>
+							</div>
+							<!-- 一句话弹窗 -->
+          </div>
+          <div class="yumingsousuo-b22-ymxl" style="display:none;">
+            <ul>
+                                     <li>.com</li>
+                                     <li>.cn</li>
+                                     <li>.cc</li>
+                                     <li>.shop</li>
+                                     <li>.xyz</li>
+                                     <li>.vip</li>
+									<li>.ltd</li>
+                                    <li>.在线</li>
+                                    <li>.网店</li>
+                                    <li>.网址</li>
+                                    <li>.top</li>
+                                     <li>.wang</li>
+                                    <li>.red</li>
+                                    <li>.pro</li>
+                                       <li>.手机</li>
+                                    <li>.ink</li>
+                                    <li>.auto</li>
+                                    <li>.link</li>
+                                    
+                                    <li>.site</li>
+                                    <li>.集团</li>
+                                    <li>.net</li>
+                                    <li>.com.cn</li>
+                                    <li>.中国</li>
+									<li>.公司</li>
+									<li>.网络</li>
+                                    <li>.biz</li>
+									
+									<li>.mobi</li>
+									
+									<li>.info</li>
+                                    <li>.org</li>
+									<li>.gov.cn</li>
+									<li>.net.cn</li>
+									<li>.org.cn</li>
+									<li>.ac.cn</li>
+                                    <li>.name</li>
+                                    <li>.中文网</li>
+                                    <li>.ren</li>
+                                    <li>.club</li>
+                                    <li>.我爱你</li>
+
+                                    
+                                    
+
+									<!--li>.cc</li>
+                                    
+                                    <li>.me</li>
+
+									<li>.tech</li>
+									 
+									<li>.online</li>
+
+                                     
+									
+									<li>.bid</li>
+                                    <li>.loan</li>
+                                    <li>.date</li>
+                                    <li>.trade</li>
+                                    
+                                    <li>.blue</li>
+                                    <li>.pink</li>
+                                    <li>.poker</li>
+                                    <li>.green</li>
+                                    
+                                    <li>.farm</li>
+                                    <li>.zone</li>
+                                    <li>.guru</li>
+                                    <li>.tips</li>
+                                    <li>.land</li>
+                                    <li>.care</li>
+                                    <li>.camp</li>
+                                    <li>.cab</li>
+                                    <li>.cash</li>
+                                    <li>.limo</li>
+                                    <li>.toys</li>
+                                    <li>.tax</li>
+                                    <li>.town</li>
+                                    <li>.fish</li>
+                                    <li>.fund</li>
+                                    <li>.fail</li>
+                                    <li>.house</li>
+                                    <li>.shoes</li>
+                                    <li>.media</li>
+                                    <li>.guide</li>
+                                    <li>.tools</li>
+                                    <li>.solar</li>
+                                    <li>.watch</li>
+                                    <li>.cheap</li>
+                                    <li>.rocks</li>
+                                    <li>.news</li>
+                                    <li>.live</li>
+                                    <li>.lawyer</li>
+                                    <li>.host</li>
+                                    <li>.wiki</li>
+                                    <li>.ink</li>
+                                    <li>.design</li>
+                                    <li>.lol</li>
+                                    <li>.hiphop</li>
+                                    <li>.hosting</li>
+                                    <li>.diet</li>
+                                    <li>.flowers</li>
+                                    <li>.car</li>
+                                    <li>.cars</li>
+                                    <li>.auto</li>
+                                    
+
+
+
+
+                                     <li>.market</li>
+                                    
+                                   <li>.win</li>
+                                   <li>.video</li>
+                                    <li>.space</li>
+									<li>.click</li>
+								    <li>.party</li>
+                                    <li>.download</li>
+                                    <li>.website</li>
+                                    <li>.site</li>
+                                    <li>.pw</li>
+                                    <li>.photo</li>
+                                    <li>.pics</li>
+                                    <li>.sexy</li>
+									<li>.audio</li>
+									<li>.gift</li>
+                                    <li>.help</li>
+									
+									<li>.net</li>
+									
+									
+									<li>.asia</li>
+
+									
+
+									<li>.hk</li>
+									<li>.tv</li>
+									
+									
+									<li>.tm</li>
+									<li>.在线</li>
+									
+									<li>.移动</li>
+									
+
+									<li>.club</li>
+									<li>.cool</li>
+									<li>.company</li>
+									<li>.city</li>
+									<li>.email</li>
+									<li>.pub</li>
+
+									<li>.software</li>
+									<li>.ninja</li>
+									
+									<li>.bike</li>
+									<li>.today</li>
+									<li>.life</li>
+
+
+
+
+
+
+
+
+                                    <li>.mom</li-->
+
+            </ul>
+          </div>
+         </form>
+        </li>
+        <li class="yumingsousuo-b3" style = "padding-top: 22px;height: 78px;margin-left: 30px;width: 173px;"> <a href="http://www.xinnet.com/domain/domain_pingjia_search.jsp?utm=domaincheck" target="_blank"> 
+        <div style = "position: relative;width: 60px;height: 60px;float: left;padding-right: 10px;margin-top: 5px;" class = "ym_cn_animation">
+          <img src="http://imgi.xinnet.com/www/index/images/tao1_sy.png" width="60px" height="60px" alt="淘 · 好域名" style = "position: absolute;left:0;top:0;"/>
+        <img src="http://imgi.xinnet.com/www/index/images/tao2_sy.png" width="60px" height="60px" alt="淘 · 好域名" style = "position: absolute;left:0;top:0;display: none;" />
+        </div>
+          <p class="yumingsousuo-b3-t" style = "margin-top: 17px;">淘&nbsp;CN</p>
+          <p class="yumingsousuo-b3-ykj" style = "font-size: 14px;margin-top: 2px;">好米等你来</p>
+          </a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="main main1" style = "width:1210px;">
+  <h2>云计算改变企业发展之路</h2>
+  <h3>网站空间数据大，不限流量适用于访问量较大的企业网站、电商网站、综合门户网站等</h3>
+  <div class="main1-nav">
+    <div class="main1-conent1" style = "margin-left: 10px;">
+      <div class="main1-01 main1-on" style = "display: none;">
+        <div class="main1-h"> <img src="http://imgi.xinnet.com/www/index/images/main1-01s.png" width="63" height="64">
+          <h2>箭头云服务器</h2>
+          <p>专为中小微企业成长而设计的云服务器</p>
+        </div>
+        <ul class="main1-b">
+          <li>通用型</li>
+          <li>CPU型</li>
+          <li>内存型</li>
+          <li>磁盘型</li>
+          <li>负载均衡</li>
+          <!--li>云高防</li-->
+        </ul>
+      </div>
+      <div class="main1-01s main1-ons" style = "opacity: 1;"> <img src="http://imgi.xinnet.com/www/index/images/main1-01.png" width="370" height="211">
+      	<div style = "position:absolute;top:215px;opacity:1;"  class = "dh_div">
+      		<div class="main1s-h">
+          <h4>箭头云服务器</h4>
+          <p><span>• SSD高性能磁盘 </span><span>• 30秒内快速部署 </span></p>
+          <p><span>• 简单强劲 </span><span>• 可最高获取20份备份 </span></p>
+          <p class="red-word">• 1年9折，2年8折，3年及以上7折</p>
+          <a href="http://www.xinnet.com/cs/cs.html" class="liaojie">立即了解</a> </div>
+        <ul class="main1s-b main1s-b1">
+          <li> <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=1">
+            <h5>负载均衡</h5>
+            <p>加强数据处理能力，提高网络的灵活性和可用性</p>
+            </a> </li>
+          <!--li>
+            <h5>云高防</h5>
+            <p>有效解决CC、DDOS攻击，超强防御，保护网站安全</p>
+          </li -->
+          <li> <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=3">
+            <h5>数据迁移</h5>
+            <p>网站程序、数据库迁移，让您的网站轻松可以访问</p>
+            </a> </li>
+        </ul>
+      	</div>
+      </div>
+    </div>
+    <div class="main1-conent1">
+      <div class="main1-01">
+        <div class="main1-h"> <img src="http://imgi.xinnet.com/www/index/images/main1-02s.png" width="65" height="65">
+          <h2>云虚拟主机</h2>
+          <p>简单易用 简化您的配置操作</p>
+        </div>
+        <ul class="main1-b">
+          <li>多线BGP线路</li>
+          <li>5A级数据中心</li>
+          <li>SAS硬盘高速读写</li>
+          <li>硬盘快照定期备份</li>
+          <li>多功能控制面板</li>
+        </ul>
+      </div>
+      <div class="main1-01s" style = "display:none;"> <img src="http://imgi.xinnet.com/www/index/images/main1-02.png" width="370" height="211">
+      <div class = "dh_div">
+        <div class="main1s-h">
+          <h4>驰云 · 火</h4>
+          <p>• 独享资源、宽带、独立IP</p>
+          <p>• 多线BGP完美对接移动互联</p>
+          <a href="http://www.xinnet.com/chicloud/pur.html?ytype=huo " class="liaojie">立即购买</a> </div>
+        <ul class="main1s-b">
+          <li> <a href="http://www.xinnet.com/virtualhost/virtualhost.html"> <span>
+            <h5>虚拟主机-全能型</h5>
+            <p>完美兼容ASP及PHP，<br>
+              同时支持SQLSERVER及<br>
+              MYSQL</p>
+            </span> </a> <a href="http://www.xinnet.com/virtualhost/virtualhost.html?mType=php"> <span>
+            <h5>虚拟主机-PHP专业型</h5>
+            <p>专用LAMP环境，支持<br>
+              多种开源CMS系统</p>
+            </span> </a> </li>
+          <li> <a href="http://www.xinnet.com/virtualhost/vhost1.html"> <span>
+            <h5>虚拟主机-海外版</h5>
+            <p>适用于外贸网站</p>
+            </span> </a> <a href="http://www.xinnet.com/chicloud/pur.html?ytype=lei "> <span>
+            <h5>驰云-雷</h5>
+            <p>极速互联，企业建站首选</p>
+            </span> </a> </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main1-conent1">
+      <div class="main1-01">
+        <div class="main1-h"> <img src="http://imgi.xinnet.com/www/index/images/main1-03s.png" width="64" height="64">
+          <h2>域名服务</h2>
+          <p>您需要有资质保证的平台</p>
+        </div>
+        <ul class="main1-b">
+          <li>域名注册</li>
+          <li>域名抢注</li>
+          <li>淘CN</li>
+          <li>一口价</li>
+          <li>域名转入</li>
+        </ul>
+      </div>
+      <div class="main1-01s" style = "display:none;"> <img src="http://imgi.xinnet.com/www/index/images/main1-03.png" width="370" height="211">
+      <div  class = "dh_div">
+        <div class="main1s-h">
+          <h4>域名服务</h4>
+          <p><span>• 品类丰富 </span><span>• 性价比高 </span></p>
+          <p><span>• 易用安全 </span><span>• 解析稳定</span></p>
+          <a href="http://www.xinnet.com/domain/domain.html" class="liaojie">立即注册</a> </div>
+        <ul class="main1s-b">
+          <li> <a href="http://www.xinnet.com/domain/domain.html"> <span>
+            <h5>域名注册</h5>
+            <p>丰富的域名种类供您选择</p>
+            </span> </a> <a href="http://www.xinnet.com/domain/domain_book_search.jsp?f=nva"> <span>
+            <h5>域名抢注</h5>
+            <p>抢您想要的域名</p>
+            </span> </a> </li>
+          <li> <a href="http://www.xinnet.com/domain/domain_pingjia_search.jsp?utm=nav"> <span>
+            <h5>淘CN</h5>
+            <p>海量CN等您来</p>
+            </span> </a> <a href="http://www.xinnet.com/domain/domain_yikoujia_search.jsp?f=nva"> <span>
+            <h5>一口价</h5>
+            <p>安全、便捷的域名交易服务</p>
+            </span> </a> </li>
+          <li> <a href="http://www.xinnet.com/domain/domainIn.html">
+            <h5>域名转入</h5>
+            <p>轻松转入，享受品质服务</p>
+            </a> </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main1-conent1">
+      <div class="main1-01 last">
+        <div class="main1-h"> <img src="http://imgi.xinnet.com/www/index/images/main1-04s.png" width="63" height="64">
+          <h2>企业邮箱</h2>
+          <p>让您的企业信息交流更加高效畅通</p>
+        </div>
+        <ul class="main1-b">
+          <li>企业邮箱—全球邮外贸版</li>
+          <li>企业邮箱—全球邮</li>
+          <li>云推送</li>
+        </ul>
+      </div>
+      <div class="main1-01s" style = "display:none;"> <img src="http://imgi.xinnet.com/www/index/images/main1-04.png" width="370" height="211">
+      	<div  class = "dh_div">
+        <div class="main1s-h">
+          <h4>全球邮外贸版</h4>
+          <p class="p1">智能分发询盘邮件，提高订单转化，外贸企业专属</p>
+          <a href="http://www.xinnet.com/mail/mail-buy-detail.html" class="liaojie liaojie1">立即购买</a> </div>
+        <div class="main1s-h main1s-h1">
+          <h4>全球邮</h4>
+          <p class="p1">全球收发畅通无阻；微信收发，随时随地高效办公</p>
+          <a href="http://www.xinnet.com/mail/mail-buy-detail.html?mType=gn" class="liaojie liaojie1">立即购买</a> </div>
+        <div class="main1s-h main1s-h1">
+          <h4>云推送</h4>
+          <p class="p1"><span>• 许可式邮件营销</span><span>• 按送达收费</span></p>
+          <p class="p1">•  限时8.8元/3888封</p>
+          <a href="http://www.xinnet.com/mail/zt/yuntuisong.html" class="liaojie liaojie1">立即购买</a> </div>
+
+  <!--div class="main1s-h main1s-h1">
+          <h4>新办公</h4>
+          <p class="p1"><span>• 简化审批流程</span><span>• 提高工作效率</span></p>
+          <p class="p1">• 智能办公“新”体验</p>
+          <a href="http://www.xinnet.com/office/office.html" class="liaojie liaojie1">立即购买</a> </div-->
+
+
+
+
+
+
+
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="main main2">
+  <div class="main2-nav">
+    <h2>优选高品质软件与服务</h2>
+    <h3>精挑细选更多优质云服务产品，更好地满足业务需求，新网为您提供服务保障</h3>
+    <div class="main2-1">
+      <div class="m01">
+        <div class="imgs"><img src="http://imgi.xinnet.com/www/index/images/main2-01.png"></div>
+        <h3>网站定制</h3>
+        <p class="word">智慧需求与“对”的设计师联合出品<br>
+          适合的网站，一次采购到位</p>
+        <p class="price">价格：<span>4880</span>元/年</p>
+        <a href="http://www.xinnet.com/site/pageSpec.html">立即定制</a> </div>
+      <div class="m01">
+        <div class="imgs"><img src="http://imgi.xinnet.com/www/index/images/main2-02.png"></div>
+        <h3>Office 365</h3>
+        <p class="word">提供你完成工作所需的office办公工具<br>
+          为您带来轻松无忧的团队协作</p>
+        <p class="price">价格：<span>360</span>元/用户/年</p>
+        <a href="http://www.xinnet.com/office365/office365.html">查看详情</a> </div>
+      <div class="m01">
+        <div class="imgs"><img src="http://imgi.xinnet.com/www/index/images/main2-04.png"></div>
+        <h3>云梦微站</h3>
+        <p class="word">云模板网站/云定制官网 双箭齐发！<br>中小企业建站首选，在线用户专享福利</p>
+        <p class="price">价格：<span>980</span>元/年</p>
+        <a href="http://www.xinnet.com/yingyong/ymwz/ymwz.html">查看详情</a> </div>
+      <div class="m01">
+        <div class="imgs"><img src="http://imgi.xinnet.com/www/index/images/main2-03.png"></div>
+        <h3>服务产品</h3>
+        <p class="word">为用户构建从0到N的网站全生命周期服务<br>
+          一站式完成，打造网站运营价值闭环</p>
+        <p class="price1">只为更好的服务</p>
+        <a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp?serviceType=2" onclick="traker.traceCount('xinnet.com', '110', 'fw18');">查看详情</a> </div>
+    </div>
+  </div>
+</div>
+<div class="main main3">
+  <div class="main3-nav">
+    <h2>解决方案</h2>
+    <h3>域名、电商、建站，助力传统企业互联网转型</h3>
+    <div class="main3-1">
+      <div class="item">
+        <div class="m01"> <img src="http://imgi.xinnet.com/www/index/images/main3-01.jpg" width="389" height="315" alt="企业级域名解决方案">
+          <p>企业级域名解决方案</p>
+          <h4 class = "text_hover">企业级域名解决方案</h4>
+          <p class="word text_hover text_hover1">新网为面向终端用户提供云服务、网站建设等互联网服务的合作伙伴提供全套高效、便捷、定制化的产品合作解决方案。帮助合作伙伴快速搭建包含域名注册、域名管理、售后服务在内的整套域名服务... ...</p>
+          <a href="http://www.xinnet.com/domain/zt/yuming.html" class = "text_hover text_hover2">查看更多</a> 
+          <div class="jjfa_hover" style = "background:url(http://imgi.xinnet.com/www/index/images/main3-01s.jpg) no-repeat;">
+          </div>
+          </div>
+          <div class="m01"> <img src="http://imgi.xinnet.com/www/index/images/main3-02.jpg" width="389" height="315" alt="电商平台对接方案">
+          <p>电商平台对接方案</p>
+          <h4 class = "text_hover">电商平台对接方案</h4>
+          <p class="word text_hover text_hover1">提供域名注册服务、解析服务、个性化建站服务，满足用户一站式建站需求；<br>
+            云服务器50秒快速部署，满足网站快速部署需求；
+            最多获取20份备份，保障数据安全。</p>
+          <a href="http://www.xinnet.com/cs/zt/dianshang.html" class = "text_hover text_hover2">查看更多</a> 
+          <div class="jjfa_hover" style = "background:url(http://imgi.xinnet.com/www/index/images/main3-02s.jpg) no-repeat;">
+          </div>
+          </div>
+        <div class="m01"> <img src="http://imgi.xinnet.com/www/index/images/main3-03.jpg" width="389" height="315" alt="建站解决方案">
+          <p>建站解决方案</p>
+          <h4 class = "text_hover">建站解决方案</h4>
+          <p class="word text_hover text_hover1">云服务器50秒快速部署，满足网站快速部署需求；<br>
+            最多获取20份备份，保障数据安全；<br>
+            负载均衡提升网络稳定性、可用性、灵活性；</p>
+          <a href="http://www.xinnet.com/cs/zt/jianzhan.html" class = "text_hover text_hover2">查看更多</a> 
+          <div class="jjfa_hover" style = "background:url(http://imgi.xinnet.com/www/index/images/main3-03s.jpg) no-repeat;">
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- <div class="items">
+        <div class="m01 jjfa_hover">
+          <h4>企业级域名解决方案</h4>
+          <p class="word">新网为面向终端用户提供云服务、网站建设等互联网服务的合作伙伴提供全套高效、便捷、定制化的产品合作解决方案。帮助合作伙伴快速搭建包含域名注册、域名管理、售后服务在内的整套域名服务... ...</p>
+          <a href="http://www.xinnet.com/domain/zt/yuming.html">查看更多</a> </div>
+        <div class="m02 jjfa_hover" style="display:none;">
+          <h4>电商平台对接方案</h4>
+          <p class="word">提供域名注册服务、解析服务、个性化建站服务，满足用户一站式建站需求；<br>
+            云服务器30秒快速部署，满足网站快速部署需求；
+            最多获取21份备份，保障数据安全。</p>
+          <a href="http://www.xinnet.com/cs/zt/dianshang.html">查看更多</a> </div>
+        <div class="m03 jjfa_hover" style="display:none;">
+          <h4>建站解决方案</h4>
+          <p class="word">云服务器30秒快速部署，满足网站快速部署需求；<br>
+            最多获取21份备份，保障数据安全；<br>
+            负载均衡提升网络稳定性、可用性、灵活性；<br>
+            高防服务，针对网站经常遭遇的网络攻击，通过高防服务保障安全防护能力......</p>
+          <a href="http://www.xinnet.com/cs/zt/jianzhan.html">查看更多</a> </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+<div class="main main4">
+  <h2>为什么选择新网</h2>
+  <h3>新网，专注互联网服务24年，我们始终如一</h3>
+  <div class="main4-1">
+    <div class="m01"> <img src="http://imgi.xinnet.com/www/index/images/main4-01.png" width="133" height="150">
+      <h4>专注互联网服务24年</h4>
+      <p class="word">累计为1170万客户提供服务<br>
+        知名域名注册商</p>
+      <p><a href="http://www.xinnet.com/about/about_us.html">了解新网</a></p>
+    </div>
+    <div class="m01"> <img src="http://imgi.xinnet.com/www/index/images/main4-02.png" width="121" height="150">
+      <h4>14家分公司</h4>
+      <p class="word">覆盖核心区域的本地化服务<br>
+        在你身边的互联网专家</p>
+      <p><a href="http://www.xinnet.com/contact_us/">查询分公司</a></p>
+    </div>
+    <div class="m01"> <img src="http://imgi.xinnet.com/www/index/images/main4-03.png" width="140" height="150">
+      <h4>域名快速解析</h4>
+      <p class="word">域名解析即时生效<br>
+        自主管理方便快速</p>
+      <p><a href="http://www.xinnet.com/service/cjwt/domain/guanli/1164.html">域名解析攻略</a></p>
+    </div>
+  </div>
+</div>
+<div class="main5">
+  <div class="chose-xinnet-con-03">
+    <div class="left">
+      <h4>新网24年</h4>
+      <p>我们共同走过</p>
+    </div>
+    <div class="right">
+      <div class="case-container">
+        <ul class="case-list" style="width: 4284px;">
+          <li>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo01.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo02.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo03.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo04.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo05.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo06.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo07.png" alt=""></dt>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo08.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo09.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo10.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo11.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo13.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo14.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo15.png" alt=""></dt>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo16.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo18.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo19.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo20.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo33.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo22.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo23.png" alt=""></dt>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo24.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo25.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo26.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo27.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo28.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo29.png" alt=""></dt>
+            </dl>
+            <dl>
+              <dt><img src="http://imgi.xinnet.com/www/newimages/new/content/customerLogo30.png" alt=""></dt>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="btn-div" style="display: none;"> <a href="javascript:;" class="left-btn"></a> <a href="javascript:;" class="right-btn"></a>
+      <ul class="round_btn">
+        <li><a href="javascript:;" class="">·</a></li>
+        <li><a href="javascript:;" class="">·</a></li>
+        <li><a href="javascript:;" class="on">·</a></li>
+        <li><a href="javascript:;" class="">·</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="main6">
+  <div class="main6-nav">
+    <h4><a href="http://www.xinnet.com/xinnews/">热门动态</a></h4>
+    <div class="news-con">
+
+         
+          <div class="news-list">
+                   <ul>
+                         
+                     
+                    <li>
+                            <div>
+ <a target="_blank" title="王牌域名续费率位于新顶级域头把" href="http://www.xinnet.com/xinnews/domain/27913.html">王牌域名续费率位于新顶级域头把[09-08]</a></div>
+                            <div>
+ <a target="_blank" title="申请域名多少钱" href="http://www.xinnet.com/xinnews/domain/27517.html">申请域名多少钱[04-16]</a></div>
+<div>
+ <a target="_blank" title="域名抢注平台" href="http://www.xinnet.com/xinnews/domain/27515.html">域名抢注平台[04-16]</a></div>
+                    </li>
+				
+			   
+                     
+                    <li>
+                            <div>
+ <a target="_blank" title="企业域名申请流程" href="http://www.xinnet.com/xinnews/domain/27514.html">企业域名申请流程[04-13]</a></div>
+                            <div>
+ <a target="_blank" title="如何购买域名" href="http://www.xinnet.com/xinnews/domain/27513.html">如何购买域名[04-13]</a></div>
+<div>
+ <a target="_blank" title="买域名去哪个网站" href="http://www.xinnet.com/xinnews/domain/27502.html">买域名去哪个网站[04-02]</a></div>
+                    </li>
+				
+			   
+                     
+                    <li>
+                            <div>
+ <a target="_blank" title="前程无忧收购拉勾网60%的股权各" href="http://www.xinnet.com/xinnews/domain/28838.html">前程无忧收购拉勾网60%的股权各[09-22]</a></div>
+                            <div>
+ <a target="_blank" title="极品域名1234.cn已建站" href="http://www.xinnet.com/xinnews/domain/28837.html">极品域名1234.cn已建站[09-22]</a></div>
+<div>
+ <a target="_blank" title="双拼域名交易近50万" href="http://www.xinnet.com/xinnews/domain/28836.html">双拼域名交易近50万[09-22]</a></div>
+                    </li>
+				
+			   
+                     
+                    <li>
+                            <div>
+ <a target="_blank" title="什么样的域名投资有潜力?" href="http://www.xinnet.com/xinnews/domain/28832.html">什么样的域名投资有潜力?[09-20]</a></div>
+                            <div>
+ <!--list.var2--></div>
+<div>
+ <!--list.var3--></div>
+                    </li>
+				
+			 			
+						
+			</ul>
+                </div>
+      <!--<a href="http://www.xinnet.com/xinnews/" class="more">查看更多&gt;&gt;</a>-->
+    </div>
+  </div>
+</div>
+<!--footer begin -->
+<!--footer begin -->
+<!--footer begin -->
+<div class="foot1">
+  <div class="nav-layer">
+    <div class="foot1-1">
+      <div class="foot1-11 fl">
+        <h3>常见问题</h3>
+        <ul>
+          <li><a href="http://www.xinnet.com/serve/zt_xinshou.html">新手指南专区</a></li>
+          <li><a href="http://www.xinnet.com/service/zlxz/">业务资料下载</a></li>
+          <li><a href="http://www.xinnet.com/serve/serve/bazt.html">网站备案入门</a></li>
+          <li><a href="http://www.xinnet.com/service/cjwt/dtkl.html">动态口令使用入门</a></li>
+          <li><a href="http://www.xinnet.com/domain/zt/mfymjx.html">免费域名解析</a></li>
+          <li><a href="http://www.xinnet.com/domain/zt/rhsqym.html">如何申请域名</a></li>
+        </ul>
+      </div>
+      <div class="foot1-11 fl">
+        <h3>实用工具</h3>
+        <ul>
+          <li><a href="http://dcp.xinnet.com/Modules/agent/domain/domain_manage.jsp">域名自助管理平台</a></li>
+          <li><a href="http://cp.xinnet.com/login">虚机管理</a></li>
+          <li><a href="http://whois.xinnet.com/domain/whois_login.jsp">whois查询</a></li>
+        </ul>
+      </div>
+      <div class="foot1-11 fl">
+        <h3>热门活动</h3>
+        <ul>
+          <li><a href="http://www.xinnet.com/mail/try.html">全球邮免费试用</a></li>
+        </ul>
+      </div>
+      <div class="foot1-11 fl">
+        <h3>客户服务</h3>
+        <ul>
+          <li><a href="http://www.xinnet.com/views/uc/html/myprd/serviceProduct/service_product_active.jsp" onclick="traker.traceCount('xinnet.com', '110', 'fw17');">服务产品</a></li>
+          <li><a href="http://www.xinnet.com/views/uc/html/service/submit_service.html">提交工单</a></li>
+          <!--li><a href="http://chat.looyu.com/chat/chat/p.do?c=46038&f=96867&g=51050">售前咨询</a></li-->
+          <li><a>售后电话400 818 2233</a></li>
+          <li><a href="https://www.icann.org/resources/pages/responsibilities-2014-03-14-zh">注册人权利与责任</a></li>
+        </ul>
+      </div>
+      <div class="foot1-12 fr"> <img src="http://imgi.xinnet.com/www/index/images/jty-12.jpg" height="133px" width="133px">
+        <p>关注新网官方微信号</p>
+      </div>
+    </div>
+    <div class="foot1-2">
+      <ul class = "foot1-2_list0">
+        <li>
+          <h3>热门产品：</h3>
+          <ul class = "foot1-2_list">
+            <li><a href="http://www.xinnet.com/domain/domain.html">域名注册</a></li>
+            <li><a href="http://www.xinnet.com/domain/domain_yikoujia_search.jsp">域名交易</a></li>
+            <li><a href="http://www.xinnet.com/cs/cs.html">箭头云</a></li>
+            <li><a href="http://www.xinnet.com/chicloud/chiclound.html">驰云服务器</a></li>
+            <li><a href="http://www.xinnet.com/virtualhost/virtualhost.html">虚拟主机</a></li>
+            <li><a href="http://www.xinnet.com/mail/mail.html">企业邮箱</a></li>
+            <li><a href="http://www.xinnet.com/site/site.html">网站定制</a></li>
+            <li><a href="http://www.xinnet.com/office/office.html">新办公</a></li>
+            <li><a href="http://www.xinnet.com/office365/office365.html">office365</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3>产品服务：</h3>
+          <ul class = "foot1-2_list">
+            <li><a href="http://www.xinnet.com/xinnews/">资讯</a></li>
+            <li><a href="http://www.xinnet.com/seo/ymjyptynx.html">域名交易平台</a></li>
+            <li><a href="http://www.xinnet.com/seo/rhmxyym.html">便宜域名注册</a></li>
+            <li><a href="http://www.xinnet.com/seo/rhkwz.html">域名过户流程</a></li>
+            <li><a href="http://www.xinnet.com/seo/smsym.html">什么是域名</a></li>
+            <li><a href="http://www.xinnet.com/seo/rhkwz.html">如何开网址</a></li>
+            <li><a href="http://www.xinnet.com/seo/tjym.html">特价域名</a></li>
+            <li><a href="http://www.xinnet.com/seo/ydymzc.html">移动域名注册</a></li>
+            <li><a href="http://www.xinnet.com/seo/djym.html">顶级域名</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3>友情链接：</h3>
+          <ul class = "foot1-2_list">
+            <li><a href="http://www.hc360.com/">慧聪网</a></li>
+            <li><a href="http://tech.163.com/">网易科技</a></li>
+            <li><a href="http://www.huishenghuiying.com.cn/">视频剪辑软件</a></li>
+            <li><a href="http://www.admin5.com/">A5创业网</a></li>
+            <li><a href="http://feixin.10086.cn/">飞信</a></li>
+            <li><a href="http://www.ijinshan.com/">金山网络</a></li>
+            <li><a href="http://www.iresearch.cn/">艾瑞网</a></li>
+            <li><a href="http://www.zw.cn/">中万网络</a></li>
+            <li><a href="http://www.yumi.com/">Yumi玉米</a></li>
+            <li><a href="http://www.cntrades.com/">中国贸易网</a></li>
+            <li><a href="http://www.300.cn/">中企动力</a></li>
+ <li><a href="https://www.marksmile.com/ ">网络品牌保护</a></li>
+ <li><a href="http://www.shangbiao.com/ ">商标转让</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- <p>
+        <label>热门产品：</label>
+        <a href="http://www.xinnet.com/domain/domain.html">域名注册</a><a href="http://www.xinnet.com/domain/domain_yikoujia_search.jsp">域名交易</a><a href="http://www.xinnet.com/cs/cs.html">箭头云</a><a href="http://www.xinnet.com/chicloud/chiclound.html">驰云服务器</a><a href="http://www.xinnet.com/virtualhost/virtualhost.html">虚拟主机</a><a href="http://www.xinnet.com/mail/mail.html">企业邮箱</a><a href="http://www.xinnet.com/site/site.html">网站定制</a><a href="http://www.xinnet.com/office/office.html">新办公</a><a href="http://www.xinnet.com/office365/office365.html">office365</a></p>
+      <p>
+        <label>产品服务：</label>
+        <a href="http://www.xinnet.com/xinnews/">资讯</a><a href="http://www.xinnet.com/seo/ymjyptynx.html">域名交易平台</a><a href="http://www.xinnet.com/seo/rhmxyym.html">便宜域名注册</a><a href="http://www.xinnet.com/seo/rhkwz.html">域名过户流程</a><a href="http://www.xinnet.com/seo/smsym.html">什么是域名</a><a href="http://www.xinnet.com/seo/rhkwz.html">如何开网址</a><a href="http://www.xinnet.com/seo/tjym.html">特价域名</a><a href="http://www.xinnet.com/seo/ydymzc.html">移动域名注册</a><a href="http://www.xinnet.com/seo/djym.html">顶级域名</a></p>
+      <p>
+        <label>友情链接：</label>
+        <a href="http://www.hc360.com/">慧聪网</a><a href="http://tech.163.com/">网易科技</a><a href="http://www.300.cn/">中企动力</a><a href="http://www.admin5.com/">A5创业网</a><a href="http://feixin.10086.cn/">飞信</a><a href="http://www.ijinshan.com/">金山网络</a><a href="http://www.iresearch.cn/">艾瑞网</a><a href="http://www.zw.cn/">中万网络</a><a href="http://www.yumi.com/">Yumi玉米</a></p> -->
+    </div>
+  </div>
+</div>
+<div class="foot2">
+  <p class="foot-link"><a href="http://www.xinnet.com/about/about_us.html" target="_blank">关于我们</a><b>|</b><a href="http://www.xinnet.com/xinnews/" target="_blank">新闻中心</a><b>|</b><a href="http://www.xinnet.com/about/rongyu.html" target="_blank">资质荣誉</a><b>|</b><a href="http://www.xinnet.com/maps/maps.html" target="_blank">网站地图</a><b>|</b><a href="http://www.xinnet.com/links/link.html" target="_blank">友情链接</a><b>|</b><a href="http://www.xinnet.com/about/joinus.html" target="_blank">加入我们</a><b>|</b><a href="http://www.xinnet.com/contact_us/" target="_blank">联系我们</a></p>
+  <div class="foot-word">
+    <p>增值电信业务经营许可证：B1-20140435 京B2-20070152 域名注册服务批文号：信部电函[2005]263号 京ICP证000012<br>
+      <span><a href="http://www.bj.cyberpolice.cn/index.do" style = "width:20px;height:20px;display: inline-block;margin-left: -15px;"><img src="http://imgi.xinnet.com/www/newimages/police.png" style = "width:18px;height: 18px;"></a></span><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102000056">&nbsp;京公网安备11030102000056号 京ICP备09061941号-4</a><br>
+      Copyright©1993-2017 北京新网数码信息技术有限公司 版权所有&nbsp;<span><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102000056" style = "width:16px;height:16px;"><img src="http://imgi.xinnet.com/www/newimages/beiantubiao.png" style = "width:18px;height:18px;margin-top: -2px;"></a></span></p>
+  </div>
+</div>
+
+<!-- GA -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-21894657-1', 'xinnet.com');
+  ga('send', 'pageview');
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f14c62aa0923dfebf6974bb7a433a904";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- 百度sitemap -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!--footer end -->
+
+<!--footer end -->
+<!--footer end -->
+
+<!-- 会员注册登录优化，完善邮箱 add by wurenwei 20151030 begin -->
+  <div style="display: none;">
+    <div id="win5">
+        <div class="win5-content">
+            <div class="div-01">
+            		<center><span>您的账户未绑定邮箱，将无法接收验证信息和产品开通信息！</span></center>
+                <span class="icon-01" id="er" style="display:none;"></span><p id="oldUserEmailError" style="display: none;"></p>
+            </div>
+            <div class="div-02">
+                <input class="input-common email"  id="oldUserEmail"  type="text" value="请输入电子邮箱" >
+            </div>
+            <div class="div-03">
+               <input class="input-validate" type="text" id="oldUserRand" name="rand" value="请输入验证码">&nbsp;<img id="captchaImageCode" src="http://www.xinnet.com/views/registernew/imageCode.jsp"/><a class="a-01" id="changeOne"  onclick="changeNewOne()" href="javascript:;">换一组</a>
+            </div>
+        </div>
+    </div>
+    <div id="win15">
+        <div class="win2-content">
+            <h3 class="title"><span class="icon"></span>绑定成功，欢迎您加入新网</h3>
+            <div class="div-01">
+               开通信已发送到您的邮箱，请注意查收！ <br>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- 会员注册登录优化，完善邮箱 add by wurenwei 20151030 end -->
+
+</body>
+</html>
+<script>
+function submitform7()
+{
+    //searchFormCom("searchFormCom");
+	//var prefix = document.getElementById("prefix").value;
+    var prefix = $("#prefix").val();
+    if(prefix!='' && prefix!='输入域名，如：xinnet'){
+	//var suffix = document.getElementById("suffix").value;
+    var suffix = $(".yumingsousuo-b22-ym").html();
+	//var domainName = prefix + suffix;
+	//if(!myIsDomain(prefix)) {
+	//	alert("输入域名无效，请重新输入！");
+	//	return;
+	//}else {
+
+		//showDivLoadIng("请稍等，域名正在查询中....");
+		//document.indexDomainCheckForm.submit();
+       // window.location.href="http://www.xinnet.com/views/domain/domain_batch_register_results.jsp?regDomains="+prefix+".com,"+prefix+".net";
+
+    //   $("#searchr").show();
+     //   $("#searchr").empty();
+
+       window.location.href=encodeURI("http://www.xinnet.com/domain/domain_search_result_version2.jsp?prefix="+prefix+"&suffix="+suffix+"&domainSuffixType=null");
+
+    }
+	//}
+}
+</script>

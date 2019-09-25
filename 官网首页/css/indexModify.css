@@ -1,0 +1,15 @@
+/*首页修改样式表*/
+
+/*服务市场样式*/
+.serMarket{background-color: #f0fafd;padding: 50px 0 118px 0;}
+.serMarket .serMarket_con{width:1200px;margin:0 auto;position: relative;}
+.serMarket .clearBoth:afetr{content:"";display: block;height:0;width:0;visibility: hidden;clear:both;}
+.serMarket .serMarket_ul{width:100%;margin-top: 52px;}
+.serMarket .serMarket_ul li{float: left;text-align: center;color:#666;width:400px;margin-top: 62px;}
+.serMarket .serMarket_ul li .serMarket_p0{font-size: 20px;font-weight: bold;color:#333;margin: 30px 0 14px 0;}
+.serMarket .serMarket_ul li .serMarket_p0 a{color:#333;}
+.serMarket .serMarket_ul li .serMarket_p0 a:hover{color:#36b6c7;}
+.serMarket .serMarket_ul li .serMarket_p1{font-size: 14px;margin-top: 5px;}
+.serMarket .serMarket_ul li .serMarket_p1 a{color:#666;}
+.serMarket .serMarket_ul li .serMarket_p1 a:hover{color:#36b6c7;}
+.serMarket .serMarket_ul li .serMarket_p1 em{font-style: initial;color:#cacaca;margin:0 12px;}
